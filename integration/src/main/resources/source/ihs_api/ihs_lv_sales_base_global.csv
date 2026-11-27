@@ -1,0 +1,27 @@
+salesRegion,String,true
+regionStateProvinceCountry,String,true
+market,String,true
+countryTerritory,String,true
+strategicGroup,String,true
+designParent,String,true
+salesParent,String,true
+salesGroup,String,true
+salesBrand,String,true
+salesNameplate,String,true
+globalNameplate,String,true
+platform,String,true
+program,String,true
+gVWRating,String,true
+productionType,String,true
+carTruck,String,true
+offType,String,true
+globalSalesSegment,String,true
+regionalSalesSegment,String,true
+architecture,String,true
+mnemonicNameplateCountry,String,true
+monthsInMarket,String,true
+vehicleLifeCycleInMonth,String,true
+regionalOrigin,String,true
+year,String,true
+volume_Units,Decimal(38 18),true
+version_code,String,true

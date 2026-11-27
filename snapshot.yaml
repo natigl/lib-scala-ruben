@@ -1,0 +1,47 @@
+trigger:
+  branches:
+    include:
+      - fix/*
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+
+  - task: JavaToolInstaller@0
+    displayName: 'PreInstalled Java Version'
+    inputs:
+      versionSpec: '11'
+      jdkArchitectureOption: 'x64'
+      jdkSourceOption: 'PreInstalled'
+      cleanDestinationDirectory: false
+
+  - task: MavenAuthenticate@0
+    displayName: 'Maven Authenticate'
+    inputs:
+      artifactsFeeds: 'Hypatia_scala'
+
+  - task: Maven@3
+    displayName: 'mvn clean package'
+    inputs:
+      mavenPomFile: 'pom.xml'
+      mavenOptions: '-Xmx3072m'
+      publishJUnitResults: false
+      mavenAuthenticateFeed: true
+      testResultsFiles: '**/surefire-reports/TEST-*.xml'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.11'
+      jdkArchitectureOption: 'x64'
+      goals: ' clean package'
+
+  - task: Copyfiles@2
+    displayName: 'Copy JARs to Artifact Staging Directory'
+    inputs:
+      artifactName: '**/*-jar-with-dependencies.jar'
+      targetFolder: $(Build.ArtifactStagingDirectory)
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Aartifact'
+    inputs:
+      pathToPublish: $(Build.ArtifactStagingDirectory)
+      artifactName: 'drop'

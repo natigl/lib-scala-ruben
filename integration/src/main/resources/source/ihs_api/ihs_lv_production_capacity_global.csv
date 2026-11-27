@@ -1,0 +1,17 @@
+region,String,true
+countryTerritory,String,true
+productionPlant,String,true
+mnemonicPlant,String,true
+manufacturingGroup,String,true
+manufacturer,String,true
+laborRepresentation,String,true
+initialOutput,String,true
+shiftSetup,String,true
+latitude,Decimal(38 18),true
+longitude,Decimal(38 18),true
+productionYear,String,true
+volumeProductionYear,Decimal(38 18),true
+volumeStraightTimeCapacity,Decimal(38 18),true
+volumeMaximumCapacity,Decimal(38 18),true
+volumeNormalizedCapacity,Decimal(38 18),true
+version_code,String,true

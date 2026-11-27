@@ -1,0 +1,10 @@
+IntCast,Integer,false
+LongCast,Long,true
+FloatCast,Float,false
+DoubleCast,Double,false
+DecimalCast,Decimal(16 4),true
+StringCast,String,false
+BinaryCast,Binary,true
+BoolCast,Boolean,false
+DateCast,Date,true
+TimeStCast,Timestamp,false

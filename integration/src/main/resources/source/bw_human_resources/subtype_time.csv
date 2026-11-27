@@ -1,0 +1,4 @@
+subtype_code,String,true
+language_code,String,true
+subtype_Descsh,String,true
+subtype_Desclg,String,true

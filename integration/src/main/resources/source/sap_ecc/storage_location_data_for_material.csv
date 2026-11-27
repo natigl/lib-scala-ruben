@@ -1,0 +1,4 @@
+material_code,String,true
+logisticCenter_code,String,true
+storageLocation,String,true
+storageBin,String,true

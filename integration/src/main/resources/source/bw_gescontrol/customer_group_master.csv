@@ -1,0 +1,6 @@
+customerGroupSAP_code,String,true
+language_code,String,true
+customerGroupSAP_desc,String,true
+objectVersion,String,true
+changeFlag,String,true
+customerGroup_code,String,true

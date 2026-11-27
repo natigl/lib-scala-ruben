@@ -1,0 +1,8 @@
+logisticCenter_code,String,true
+logisticCenter_desc,String,true
+objectVersion,String,true
+changeFlag,String,true
+managementCompany_code,String,true
+salesOrganization_code,String,true
+financialCompany_code,String,true
+firstMonthForGbi,String,true

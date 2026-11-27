@@ -1,0 +1,8 @@
+mandt,String,true
+purchasingStructure_code,String,true
+valuationClass,String,true
+materialGroup,String,true
+plantExceptions,String,true
+purchasingGroup_code,String,true
+materialcoding,String,true
+comments,String,true

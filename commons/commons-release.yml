@@ -1,0 +1,71 @@
+trigger: none
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - checkout: self
+    persistCredentials: true
+  - script: |
+      git config --global user.email "acamaramonedero@es.gestamp.es"
+      git config --global user.name "Angel Camara"
+      # extraheader GLOBAL con el token del sistema. A diferencia del credential que
+      # persistCredentials escribe en el .git/config del workspace, este es global y por
+      # tanto lo hereda el 'git clone' fresco que release:perform hace a target/checkout
+      # (perform clona el tag del remoto por diseno, para construir exactamente lo etiquetado).
+      git config --global http.https://dev.azure.com/.extraheader "AUTHORIZATION: bearer $SYSTEM_ACCESSTOKEN"
+      git checkout -b main
+    displayName: 'Set GIT Identity'
+    env:
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+
+  - bash: |
+      echo Repository Name = $(Build.Repository.Name)
+      echo Branch = $(Build.SourceBranch)
+      echo BuildId = $(Build.BuildId)
+      echo Local Path Repository = $(Build.Repository.LocalPath)
+      echo Trigger type = $(Build.Reason)
+
+  - task: MavenAuthenticate@0
+    displayName: 'Maven Authenticate'
+    inputs:
+      artifactsFeeds: 'Hypatia_scala'
+
+  - task: Maven@3
+    displayName: 'mvn release:prepare'
+    inputs:
+      mavenPomFile: 'commons/pom.xml'
+      options: '-DmodulesToRelease=commons'
+      mavenOptions: '-Xmx3072m'
+      publishJUnitResults: true
+      testResultsFiles: '**/TEST-*.xml'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.8'
+      jdkArchitectureOption: 'x64'
+      goals: '--batch-mode release:prepare'
+
+  - task: Maven@3
+    displayName: 'mvn release:perform'
+    inputs:
+      mavenPomFile: 'commons/pom.xml'
+      options: '-DmodulesToRelease=commons'
+      mavenOptions: '-Xmx3072m'
+      publishJUnitResults: true
+      testResultsFiles: '**/TEST-*.xml'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.8'
+      jdkArchitectureOption: 'x64'
+      goals: '--batch-mode release:perform'
+
+  - task: Copyfiles@2
+    displayName: 'Copy hypatia-commons JARs to Artifact Staging Directory'
+    inputs:
+      sourceFolder: '$(Build.Repository.LocalPath)/commons/target'
+      artifactName: 'hypatia-lib-scala-commons-jar-with-dependencies.jar'
+      targetFolder: $(Build.ArtifactStagingDirectory)
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Aartifact'
+    inputs:
+      pathToPublish: $(Build.ArtifactStagingDirectory)
+      artifactName: 'drop'

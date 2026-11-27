@@ -1,0 +1,12 @@
+financialCompany_code,String,true
+accountNumberOfVendorOrCreditor,String,true
+specialTransactionType,String,true
+specialIndicator,String,true
+clearingDate,Date,true
+documentNumberOfTheClearingDocument,String,true
+assignmentNumber,String,true
+materialDocumentYear,Short,true
+accountingDocumentNumber,String,true
+itemInAccountingDocument,Short,true
+baselineDate,Date,true
+cashDiscountDays,Short,true

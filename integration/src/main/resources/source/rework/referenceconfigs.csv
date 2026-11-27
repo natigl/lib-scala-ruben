@@ -1,0 +1,12 @@
+Guid,String,false
+PlantCode,String,false
+LineCode,String,false
+Asset,String,false
+FeatureInfoId,String,false
+Operation,String,false
+Image,String,false
+Coordinates,String,false
+Hidden,Boolean,false
+Created,String,false
+Location,String,false
+Reworkable,Boolean,false

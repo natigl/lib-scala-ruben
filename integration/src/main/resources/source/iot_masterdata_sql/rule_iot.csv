@@ -1,0 +1,6 @@
+Name,String,false
+Technology,String,true
+Type,String,true
+SubType,String,true,
+Team,String,true
+Criticity,Integer,true

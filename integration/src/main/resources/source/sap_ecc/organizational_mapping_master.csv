@@ -1,0 +1,15 @@
+MANDT,String,true
+logisticCenter_code,String,true
+logisticCenter_desc,String,true
+purchasingOrganization_code,String,true
+purchasingOrganization_desc,String,true
+salesOrganization_code,String,true
+salesOrganization_desc,String,true
+financialCompany_code,String,true
+financialCompany_desc,String,true
+managementCompany_code,String,true
+managementCompany_desc,String,true
+division_code,String,true
+division_descsh,String,true
+subdivision_code,String,true
+subdivision_descmd,String,true

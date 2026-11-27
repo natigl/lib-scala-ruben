@@ -1,0 +1,3 @@
+UserCase,String,trie
+Report,String,true
+Name,String,true

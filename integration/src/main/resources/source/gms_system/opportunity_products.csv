@@ -1,0 +1,3 @@
+opportunityId,Integer,false
+versionID,Integer,false
+product_desc,String,false

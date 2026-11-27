@@ -1,0 +1,66 @@
+trigger:
+  branches:
+    include:
+      - feature/*
+      - fix/*
+  paths:
+    include:
+    - commons/*
+    - kafka/*
+
+resources:
+  repositories:
+    - repository: hypatia-lib-scala
+      type: git
+      ref: refs/heads/main
+      name: Big Data/hypatia-lib-scala
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - bash: |
+      echo Repository Name = $(Build.Repository.Name)
+      echo Branch = $(Build.SourceBranch)
+      echo BuildId = $(Build.BuildId)
+      echo Local Path Repository = $(Build.Repository.LocalPath)
+
+  - task: JavaToolInstaller@0
+    displayName: 'PreInstalled Java Version 11'
+    inputs:
+      versionSpec: '11'
+      jdkArchitectureOption: 'x64'
+      jdkSourceOption: 'PreInstalled'
+      cleanDestinationDirectory: false
+
+  - task: MavenAuthenticate@0
+    displayName: 'Maven Authenticate'
+    inputs:
+      artifactsFeeds: 'Hypatia_scala'
+
+  - task: Maven@3
+    displayName: 'mvn clean package'
+    inputs:
+      mavenPomFile: 'pom.xml'
+      options: '-pl kafka -am'
+      mavenOptions: '-Xmx3072m'
+      publishJUnitResults: false
+      mavenAuthenticateFeed: true
+      testResultsFiles: '**/surefire-reports/TEST-*.xml'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.11'
+      jdkArchitectureOption: 'x64'
+      goals: ' clean package'
+
+  - task: Copyfiles@2
+    displayName: 'Copy hypatia-kafka JARs to Artifact Staging Directory'
+    inputs:
+      sourceFolder: '$(Build.Repository.LocalPath)/kafka/target'
+      artifactName: 'hypatia-lib-scala-kafka-jar-with-dependencies.jar'
+      targetFolder: $(Build.ArtifactStagingDirectory)
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact'
+    inputs:
+      pathToPublish: $(Build.ArtifactStagingDirectory)
+      artifactName: 'drop'

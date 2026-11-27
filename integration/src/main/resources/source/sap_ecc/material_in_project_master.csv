@@ -1,0 +1,53 @@
+MANDT,String,true
+material_code,String,true
+salesOrganization_code,String,true
+distributionChannel_code,String,true
+productHierarchy,String,true
+project_code,String,true
+vehicle_code,String,true
+businessUnit,String,true
+startOfProduction,String,true
+endOfProduction,String,true
+bodystyle,String,true
+platform_code,String,true
+LVORM,String,true
+VERSG,String,true
+BONUS,String,true
+PROVG,String,true
+SKTOF,String,true
+VMSTA,String,true
+VMSTD,String,true
+AUMNG,Decimal(16 4),true
+LFMNG,Decimal(16 4),true
+EFMNG,Decimal(16 4),true
+SCMNG,Decimal(16 4),true
+SCHME,String,true
+VRKME,String,true
+MTPOS,String,true
+DWERK,String,true
+PMATN,String,true
+KONDM,String,true
+KTGRM,String,true
+MVGR3,String,true
+MVGR4,String,true
+MVGR5,String,true
+PRAT1,String,true
+PRAT2,String,true
+PRAT3,String,true
+PRAT4,String,true
+PRAT5,String,true
+PRAT6,String,true
+PRAT7,String,true
+PRAT8,String,true
+PRAT9,String,true
+PRATA,String,true
+RDPRF,String,true
+MEGRU,String,true
+VAVME,String,true
+ZZSIZE,String,true
+ZZPRAT11,String,true
+ZZPRAT12,String,true
+ZZPRAT13,String,true
+ZZPRAT14,String,true
+ZZPRAT15,String,true
+ZZPRAT16,String,true

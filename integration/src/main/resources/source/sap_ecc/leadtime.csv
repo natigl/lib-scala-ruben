@@ -1,0 +1,13 @@
+logisticCenter_code,String,true
+demandNoDemand,String,true
+fiscalYear,Short,true
+month,Byte,true
+materialType,String,true
+stockLocalCurrency,Decimal(16 4),true
+stockGlobalCurrency,Decimal(16 4),true
+totalStockLocalCurrency,Decimal(16 4),true
+totalStockGlobalCurrency,Decimal(16 4),true
+coverageDays,Decimal(16 4),true
+valueStockCoverage,Decimal(16 4),true
+stockMonthCoverage,Decimal(16 4),true
+unitOfMeasureForDisplay,String,true

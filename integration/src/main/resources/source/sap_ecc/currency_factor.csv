@@ -1,0 +1,6 @@
+quotationType,String,true
+originCurrency,String,true
+targetCurrency,String,true
+validateDate,Date,true
+originCurrencyFactor,Integer,true
+targetCurrencyFactor,Integer,true

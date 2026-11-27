@@ -1,0 +1,10 @@
+localAccount_code,String,true
+localAccount_desc,String,true
+localChartsOfAccounts,String,true
+objectVersion,String,true
+changeFlag,String,true
+indicatorGLAccountisBalanceSheetAccount,String,true
+masterDataActive,String,true
+debitEpigraph,String,true
+creditEpigraph,String,true
+calendarMonth,String,true

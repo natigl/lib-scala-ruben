@@ -1,0 +1,43 @@
+postingPeriod_code,String,true
+fiscalYear_code,String,true
+fiscalYearVariant_code,String,true
+calendarYearMonth,String,true
+personnelArea,String,true
+personnelSubarea,String,true
+externalPersonnelArea,String,true
+externalPersonnelSubArea,String,true
+financialCompany_code,String,true
+country_code,String,true
+managementCompany_code,String,true
+division_code,String,true
+subdivision_code,String,true
+contractCompanyCode_code,String,true
+typeOfLabour,String,true
+typeOfEmployment_code,String,true
+templatetype,String,true
+version_code,String,true
+typeOfDataSapNoSap,String,true
+actionReason_code,String,true
+actionType_code,String,true
+leavingReason_code,String,true
+averageHeadcount,Decimal(38 18),true
+endOfMonthHeadcount,Decimal(38 18),true
+overtimeHours,Decimal(38 18),true
+accumulatedOvertimeHours,Decimal(38 18),true
+absenteeismHours,Decimal(38 18),true
+accumulatedAbsenteeismHours,Decimal(38 18),true
+adjustedTheoreticalHours,Decimal(38 18),true
+accumulatedAdjustedTheoreticalHours,Decimal(38 18),true
+numberOfActions,Decimal(38 18),true
+othersHoursNOTworked,Decimal(38 18),true
+otherHoursWorked,Decimal(38 18),true
+accumulatedOtherHoursNotWorked,Decimal(38 18),true
+accumulatedOtherHoursWorked,Decimal(38 18),true
+plannedWorkingHours,Decimal(38 18),true
+absenteeismHours_pct,Decimal(38 18),true
+overtimeHours_Pct,Decimal(38 18),true
+accumulatedPlannedWorkingHours,Decimal(38 18),true
+fullTimeEquivalent_Monthly,Decimal(38 18),true)
+fullTimeEquivalent_Annual,Decimal(38 18),true
+practicalHours,Decimal(38 18),true
+accumulatedPracticalHours,Decimal(38 18),true

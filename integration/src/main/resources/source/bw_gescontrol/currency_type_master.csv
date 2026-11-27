@@ -1,0 +1,3 @@
+currencytype_code,String,true
+language_code,String,true
+currencytype_desc,String,true

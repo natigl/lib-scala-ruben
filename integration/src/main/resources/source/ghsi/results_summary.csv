@@ -1,0 +1,11 @@
+headerId,Long,true
+division_desc,String,true
+country_desc,String,true
+logisticCenter_desc,String,true
+logisticCenter_code,String,true
+managementCompany_code,String,true
+kPI,Decimal(18 4),true
+index,Decimal(18 4),true
+conditions,Decimal(18 4),true
+manage,Decimal(18 4),true
+recordModifiedDate,Timestamp,true

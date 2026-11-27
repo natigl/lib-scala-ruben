@@ -1,0 +1,5 @@
+Name,String,true
+Code,String,false
+PurchasingOrganizationCode,String,false
+SalesOrganizationCode,String,false
+TimeZoneId,String,false

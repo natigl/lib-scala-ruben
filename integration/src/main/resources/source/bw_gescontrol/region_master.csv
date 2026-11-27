@@ -1,0 +1,5 @@
+region_code,String,true
+language_code,String,true
+region_desc,String,true
+objectVersion,String,true
+changeFlag,String,true

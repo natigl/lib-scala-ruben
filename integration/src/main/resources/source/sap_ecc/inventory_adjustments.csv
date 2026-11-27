@@ -1,0 +1,26 @@
+logisticCenter_code,String,true
+workCenter,String,true
+material_code,String,true
+codeForScrapping,String,true
+dayOfSearch,Date,true
+quantityInUnitOfEntry,Decimal(16 4),true
+unitOfEntry,String,true
+amountInLocalCurrency,Decimal(16 4),true
+documentCurrency,String,true
+standardPrice,Decimal(16 4),true
+priceUnit,Decimal(16 4),true
+typology,String,true
+isInsideOfTheProcess,String,true
+scrappingDate,Date,true
+scrappingHour,String,true
+nonCaptorField,String,true
+isRawMaterial,Boolean,true
+isSemifinishMaterial,Boolean,true
+kPIPositiveAdjustment,Boolean,true
+kPIMinusAdjustment,Boolean,true
+kPISPositiveInventory,Boolean,true
+kPISNegativeInventory,Boolean,true
+kPISProductionClosure,Boolean,true
+amountInEuros,Decimal(16 4),true
+currencyKey,String,true
+standardPriceInEuros,Decimal(16 4),true

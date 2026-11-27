@@ -1,0 +1,17 @@
+headerId,Long,true
+indexDescription,String,true
+lastYearTotalResultsKPI,Decimal(18 4),true
+januaryResultsKPI,Decimal(18 4),true
+februaryResultsKPI,Decimal(18 4),true
+marchResultsKPI,Decimal(18 4),true
+aprilResultsKPI,Decimal(18 4),true
+mayResultsKPI,Decimal(18 4),true
+juneResultsKPI,Decimal(18 4),true
+julyResultsKPI,Decimal(18 4),true
+augustResultsKPI,Decimal(18 4),true
+septemberResultsKPI,Decimal(18 4),true
+octoberResultsKPI,Decimal(18 4),true
+novemberResultsKPI,Decimal(18 4),true
+decemberResultsKPI,Decimal(18 4),true
+totalResultsKPI,Decimal(18 4),true
+recordModifiedDate,Timestamp,true

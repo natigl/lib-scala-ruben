@@ -1,0 +1,6 @@
+subfamily_code,String,true
+languageSubFamily_code,String,true
+datetoSubFamily,Timestamp,true
+dateFromSubFamily,Timestamp,true
+subFamily_descsh,String,true
+subFamily_Descmd,String,true

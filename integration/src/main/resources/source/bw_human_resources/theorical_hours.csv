@@ -1,0 +1,19 @@
+postingPeriod_code,String,true
+fiscalYearVariant_code,String,true
+fiscalYear_code,String,true
+calendarYearMonth,String,true
+personnelArea,String,true
+personnelSubarea,String,true
+version_code,String,true
+financialCompany_code,String,true
+country_code,String,true
+managementCompany_code,String,true
+division_code,String,true
+subdivision_code,String,true
+typeofDataSapNoSap,String,true
+forecastVersion_code,String,true
+reportingYear,String,true
+holidays,Decimal(38 18),true
+theoricalWorkedHours,Decimal(38 18),true
+theoricalVacationHours,Decimal(38 18),true
+theoricalAvailableHours,Decimal(38 18),true

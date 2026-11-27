@@ -1,0 +1,3 @@
+smVendorId,String,true
+_embedded,String,true
+vendorInfo,String,true

@@ -1,0 +1,14 @@
+purchasingDocumentNumber,String,true
+itemNumberOfPurchasingDocument,Integer,true
+sequentialNumberOfAccountAssignment,Byte,true
+transactionEventType,String,true
+debitCreditIndicator,String,true
+materialDocumentYear,Short,true
+invoiceDocument,String,true
+itemInInvoiceDocument,Short,true
+documentCurrency,String,true
+creationDate,Date,true
+documentDate,Date,true
+receptionDate,Date,true
+quantity,Decimal(16 4),true
+amountInDocumentCurrency,Decimal(16 4),true

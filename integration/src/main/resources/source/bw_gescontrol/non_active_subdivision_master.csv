@@ -1,0 +1,5 @@
+subdivision_code,String,true
+language_code,String,true
+subdivision_desc,String,true
+objectVersion,String,true
+changeFlag,String,true

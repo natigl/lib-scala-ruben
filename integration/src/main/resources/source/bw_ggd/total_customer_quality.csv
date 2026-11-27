@@ -1,0 +1,8 @@
+calendarYear_code,String,true
+calendarMonth,String,true
+calendarYearMonth,String,true
+managementCompany_code,String,true
+customerGroup_code,String,true
+customerClaims,Integer,true
+noOKParts,Integer,true
+deliveredParts,Integer,true

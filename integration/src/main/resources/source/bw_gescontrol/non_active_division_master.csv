@@ -1,0 +1,7 @@
+division_code,String,true
+language_code,String,true
+division_desc,String,true
+objectVersion,String,true
+changeFlag,String,true
+sortNumber,String,true
+currency,String,true

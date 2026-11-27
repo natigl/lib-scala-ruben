@@ -1,0 +1,3 @@
+businessUnit_code,String,true
+language_code,String,true
+businessUnit_desc,String,true

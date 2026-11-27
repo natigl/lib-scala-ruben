@@ -1,0 +1,9 @@
+genericDepartment_code,String,true
+language_code,String,true
+genericDepartment_desc,String,true
+controllingArea_code,String,true
+objectVersion,String,true
+changeFlag,String,true
+genericDepartmentDigits_code,String,true
+personResponsible_code,String,true
+logicalNameOfTheSystem,String,true

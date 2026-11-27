@@ -1,0 +1,13 @@
+Division,String,true
+logisticCenter_desc,String,true
+managementCompany_code,String,true
+logisticCenter_code,String,true
+qualityCostType,String,true
+qualityCostCategory,String,true
+qualityCostSubcategory,String,true
+qualityCostGroup,String,true
+qualityCostSubgroup,String,true
+year,Short,true
+month,String,true
+valor,Decimal(16 4),true
+currency,String,true

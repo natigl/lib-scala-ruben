@@ -1,0 +1,5 @@
+customerPlantcodeAndVehiclecode,String,true
+customerPlant_code,String,true
+vehicle_code,String,true
+powertrain_code,String,true
+powertrain_desc,String,true

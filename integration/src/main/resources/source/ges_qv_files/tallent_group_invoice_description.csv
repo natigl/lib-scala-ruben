@@ -1,0 +1,10 @@
+invoiceDocument,String,true
+itemNumberOfInvoiceDocument,Integer,true
+documentDate,Date,true
+materialDescription,String,true
+logisticCenter_code,String,true
+material_code,String,true
+_c6,String,true
+_c7,String,true
+_c8,String,true
+_c9,String,true

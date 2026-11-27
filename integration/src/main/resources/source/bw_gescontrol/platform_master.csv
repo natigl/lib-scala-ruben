@@ -1,0 +1,3 @@
+platform_code,String,true
+language_code,String,true
+platform_desc,String,true

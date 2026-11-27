@@ -1,0 +1,17 @@
+acmId,String,true
+addressCity,String,true
+addressCountryCode,String,true
+addressLine1,String,true
+addressLine2,String,true
+addressLine3,String,true
+addressPostalCode,String,true
+addressRegionCode,String,true
+anId,String,true
+erpVendorID,String,true
+integratedToErp,String,true
+qualificationStatus,String,true
+registrationStatus,String,true
+smVendorId,String,true
+supplierName,String,true
+genericCustomFields,String,true
+qualifications,String,true

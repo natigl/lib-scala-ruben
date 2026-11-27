@@ -1,0 +1,12 @@
+profitCenter_code,String,true
+language_code,String,true
+profitCenter_desc,String,true
+controllingArea_code,String,true
+objectVersion,String,true
+dateTo,String,true
+dateFrom,String,true
+changeFlag,String,true
+logicalNameOfTheSystem,String,true
+objectCurrencyforCOObject,String,true
+responsible,String,true
+sourceSystem,String,true

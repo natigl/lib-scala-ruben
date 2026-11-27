@@ -1,0 +1,21 @@
+processYear,Short,true
+purchasingGroup_code,String,true
+process_code,Integer,true
+process_desc,String,true
+openingDate,Date,true
+closingDate,Date,true
+currency,String,true
+exchangeRate,Decimal(16 4),true
+purchasingTeam,String,true
+buyer_code,String,true
+decisionType,Byte,true
+offersNumber,Short,true
+offersNumberWeb,Short,true
+offersNumberNoWeb,Short,true
+processDefinition,String,true
+processStatus,String,true
+presentationDate,Date,true
+numberOfVendors,Short,true
+numberOfVendorsOffers,Short,true
+openOrder,Boolean,true
+updateTimestamp,Timestamp,true

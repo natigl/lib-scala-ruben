@@ -1,0 +1,12 @@
+invoiceDocument,String,true
+materialDocumentYear,Short,true
+financialCompany_code,String,true
+documentType,String,true
+creationDate,Date,true
+receptionDate,Date,true
+dueDateBaseline,Date,true
+cashDiscountDays,Short,true
+documentCurrency,String,true
+accountNumberOfVendorOrCreditor,String,true
+invoiceDocumentStatus,String,true
+investmentIndicator,String,true

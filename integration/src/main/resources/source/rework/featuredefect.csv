@@ -1,0 +1,4 @@
+FeatureDefectId,String,false
+Description,String,false
+ProcessTypeId,String,false
+IsMaintenance,Boolean,false

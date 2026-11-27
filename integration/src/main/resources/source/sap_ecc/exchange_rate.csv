@@ -1,0 +1,5 @@
+quotationType,String,true
+originCurrency,String,true
+targetCurrency,String,true
+validateDate,Date,true
+exchangeRate,Decimal(16 5),true

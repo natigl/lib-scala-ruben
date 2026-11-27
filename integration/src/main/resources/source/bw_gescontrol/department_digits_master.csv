@@ -1,0 +1,9 @@
+genericDepartmentDigits_code,String,true
+language_code,String,true
+genericDepartmentDigits_desc,String,true
+objectVersion,String,true
+changeFlag,String,true
+costNature,String,true
+typeOfLabour,String,true
+inactiveFlag,String,true
+departmentType,String,true

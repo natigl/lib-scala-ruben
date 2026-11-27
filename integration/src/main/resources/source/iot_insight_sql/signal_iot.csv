@@ -1,0 +1,12 @@
+Id,Integer,false
+Name,String,true
+Description,String,true
+Plant,String,true
+Line,String,true
+Asset,String,false
+SubAsset,String,true
+DataType,String,true
+Source,String,true
+IsRecipe,Boolean,true
+Units,String,true
+ProcessType,String,true

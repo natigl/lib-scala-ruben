@@ -1,0 +1,20 @@
+fiscalYearVariant_code,String,true
+postingPeriod_code,String,true
+fiscalYear_code,String,true
+fiscalYearPeriod_code,String,true
+calendarYear_code,String,true
+currency_code,String,true
+localCurrency_code,String,true
+currencyType_code,String,true
+freeCashFlowConcept_code,String,true
+forecastVersion_code,String,true
+halfYear_code,String,true
+quarter_code,String,true
+version_code,String,true
+region_code,String,true
+country_code,String,true
+financialCompany_code,String,true
+managementCompany_code,String,true
+amountLocalCurrency,Decimal(38 18),true
+monthlyAmountInGroupCurrency,Decimal(38 18),true
+amountBudget,Decimal(38 18),true

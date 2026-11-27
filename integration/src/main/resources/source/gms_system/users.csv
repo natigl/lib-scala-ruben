@@ -1,0 +1,4 @@
+versionID,Integer,false
+account,String,false
+vendorDescriptionEstandar,String,false
+email,String,true

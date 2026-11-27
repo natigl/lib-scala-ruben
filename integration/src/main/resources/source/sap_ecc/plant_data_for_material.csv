@@ -1,0 +1,4 @@
+material_code,String,true
+logisticCenter_code,String,true
+costOrderNumber,String,true
+mRPType,String,true

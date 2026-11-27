@@ -1,0 +1,13 @@
+Id,Integer,false
+Plant,String,true
+Line,String,true
+Asset,String,false
+SubAsset,String,true
+Reference,Integer,false
+Working,Integer,false
+FeatureReference,String,false
+FeatureId,Integer,false
+FeatureType,String,true
+ProcessType,String,true
+Piece,Integer,false
+Critical,Boolean,true

@@ -1,0 +1,63 @@
+logisticCenter_code,String,true
+fiscalYear,Short,true
+month,Byte,true
+material_code,String,true
+inventoryID,String,true
+storageLocation,String,true
+dateOfJobExecution,Date,true
+inventoryDate,Date,true
+inventoryNumber,Integer,true
+material_desc,String,true
+valuationClass,String,true
+materialType,String,true
+project,String,true
+vehicle,String,true
+quantityTotalInventory,Decimal(16 4),true
+baseUnitOfMeasureTotalInventory,String,true
+valueLocalCurrencyTotalInventory,Decimal(16 4),true
+localCurrencyTotalInventory,String,true
+valueGlobalCurrencyTotalInventory,Decimal(16 4),true
+globalCurrencyTotalInventory,String,true
+averageValueLocalCurrencyPerInventoryMaterial,Decimal(16 4),true
+quantityMoveToINCI,Decimal(16 4),true
+baseUnitOfMeasureMoveToINCI,String,true
+valueLocalCurrencyMoveToINCI,Decimal(16 4),true
+localCurrencyMoveToINCI,String,true
+valueGlobalCurrencyMoveToINCI,Decimal(16 4),true
+globalCurrencyMoveToINCI,String,true
+quantityNewLabel,Decimal(16 4),true
+baseUnitOfMeasureNewLabel,String,true
+valueLocalCurrencyNewLabel,Decimal(16 4),true
+localcurrencyNewLabel,String,true
+valueGlobalCurrencyNewLabel,Decimal(16 4),true
+globalcurrencyNewLabel,String,true
+quantityAbsoluteValueDifference,Decimal(16 4),true
+baseUnitOfMeasureAbsoluteValueDifference,String,true
+valueLocalCurrencyDifference,Decimal(16 4),true
+localCurrencyDifference,String,true
+valueGlobalCurrencyDifference,Decimal(16 4),true
+globalCurrencyDifference,String,true
+valorLocalCurrencyStockMaterial,Decimal(16 4),true
+localCurrencyStockMaterial,String,true
+valorGlobalCurrencyStockMaterial,Decimal(16 4),true
+globalCurrencyStockMaterial,String,true
+valorLocalCurrencyStockPlant,Decimal(16 4),true
+localCurrencyStockPlant,String,true
+valorGlobalCurrencyStockPlant,Decimal(16 4),true
+globalCurrencyStockPlant,String,true
+valorLocalCurrencyStockMaterialType,Decimal(16 4),true
+localCurrencytockMaterialType,String,true
+valorGlobalCurrencyStockMaterialType,Decimal(16 4),true
+globalCurrencyStockMaterialType,String,true
+valorLocalCurrencyStockWarehouse,Decimal(16 4),true
+localCurrencyStockWarehouse,String,true
+valorGlobalCurrencyStockWarehouse,Decimal(16 4),true
+globalCurrencyStockWarehouse,String,true
+ratioStockAccuracyMaterial,Decimal(16 4),true
+ratioStockAccuracyWarehouse,Decimal(16 4),true
+ratioStockAccuracyMaterialType,Decimal(16 4),true
+ratioStockAccuracyPlant,Decimal(16 4),true
+ratioInventoryTotalMaterial,Decimal(16 4),true
+ratioInventoryTotalWarehouse,Decimal(16 4),true
+ratioInventoryTotalMaterialType,Decimal(16 4),true
+ratioInventoryTotalPlant,Decimal(16 4),true

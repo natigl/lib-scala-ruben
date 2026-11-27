@@ -1,0 +1,15 @@
+investmentId,Integer,false
+saleId,Integer,false
+customerPlantcodeAndVehiclecode,String,false
+versionID,Integer,false
+year,String,false
+fullCapex,Double,false
+allocatedCapex,Double,false
+fullexpense,Double,false
+allocatedExpense,Double,false
+fulltooling,Double,false
+allocatedTooling,Double,false
+dateOnWhichTheRecordWasCreated,Timestamp,false
+createdBy,String,false
+modifiedOn,Timestamp,true
+modifiedBy,String,false

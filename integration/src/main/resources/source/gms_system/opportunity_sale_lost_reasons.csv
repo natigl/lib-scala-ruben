@@ -1,0 +1,3 @@
+saleId,Integer,false
+versionID,Integer,false
+lostReasonsName,String,false

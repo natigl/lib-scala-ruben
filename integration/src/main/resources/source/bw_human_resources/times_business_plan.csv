@@ -1,0 +1,29 @@
+fiscalYear_code,String,false
+fiscalYearVariant_code,String,false
+personnelArea,String,false
+personnelSubarea,String,false
+financialCompany_code,String,false
+country_code,String,false
+managementCompany_code,String,false
+division_code,String,false
+subdivision_code,String,false
+typeOfLabour,String,false
+typeOfEmployment_code,String,false
+templatetype,String,false
+businessPlanVersion,String,false
+reportingYear,String,false
+typeofDataSapNoSap,String,false
+plannedWorkingHours,Decimal(38 18),false
+accumulatedPlannedWorkingHours,Decimal(38 18),false
+absenteeismHours,Decimal(38 18),false
+accumulatedAbsenteeismHours,Decimal(38 18),false
+overtimeHours,Decimal(38 18),false
+accumulatedOvertimeHours,Decimal(38 18),false
+othersHoursNoTworked,Decimal(38 18),false
+otherHoursWorked,Decimal(38 18),false
+accumulatedOtherHoursNotWorked,Decimal(38 18),false
+accumulatedOtherHoursWorked,Decimal(38 18),false
+practicalHours,Decimal(38 18),false
+accumulatedPracticalHours,Decimal(38 18),false
+fullTimeEquivalent_Monthly,Decimal(38 18),false
+fullTimeEquivalent_Annual,Decimal(38 18),false

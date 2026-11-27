@@ -1,0 +1,8 @@
+typeOfEmployment_code,String,true
+language_code,String,true
+typeofEmployment_desc,String,true
+itemVersion_code,String,true
+changed_code,String,true
+typeOfEmploymentGroup_code,String,true
+typeOfWork_code,String,true
+typeOfWork_desc,String,true

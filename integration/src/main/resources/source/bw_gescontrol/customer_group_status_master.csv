@@ -1,0 +1,3 @@
+customerGroupStatus_code,String,true
+language_code,String,true
+customerGroupStatus_desc,String,true

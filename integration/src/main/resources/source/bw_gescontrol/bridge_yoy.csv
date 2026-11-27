@@ -1,0 +1,18 @@
+fiscalYearPeriod_code,String,true
+postingPeriod_code,String,true
+fiscalYear_code,String,true
+localCurrency_code,String,true
+currency_code,String,true
+managementEpigraph_code,String,true
+managementCompany_code,String,true
+financialCompany_code,String,true
+country_code,String,true
+region_code,String,true
+currencyType_code,String,true
+version_code,String,true
+bridgeConcept_code,String,true
+businessUnit_code,String,true
+businessUnitSegments_code,String,true
+amountEuros,Decimal(38 18),true
+amountLocalCurrency,Decimal(38 18),true
+amountBudget,Decimal(38 18),true

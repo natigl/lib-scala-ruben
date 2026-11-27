@@ -1,0 +1,9 @@
+headerId,Long,true
+division_desc,String,true
+logisticCenter_desc,String,true
+logisticCenter_code,String,true
+managementCompany_code,String,true
+factor,String,true
+applicableOrDirectLabour,Decimal(18 4),true
+individualScore,Decimal(18 4),true
+recordModifiedDate,Timestamp,true

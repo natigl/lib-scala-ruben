@@ -1,0 +1,18 @@
+postingPeriod_code,String,true
+fiscalYear_code,String,true
+fiscalYearVariant_code,String,true
+calendarYearMonth,String,true
+personnelArea,String,true
+personnelSubarea,String,true
+financialCompany_code,String,true
+country_code,String,true
+managementCompany_code,String,true
+division_code,String,true
+subdivision_code,String,true
+typeOfLabour,String,true
+typeOfEmployment_code,String,true
+templatetype,String,true
+forecastVersion_code,String,true
+typeOfDataSapNoSap,String,true
+averageHeadcount,Decimal(38 18),true
+endOfMonthHeadcount,Decimal(38 18),true

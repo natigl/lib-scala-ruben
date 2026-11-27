@@ -1,0 +1,3 @@
+saleId,Long,false
+customerPlantcodeAndVehiclecode,Long,false
+versionID,Long,false

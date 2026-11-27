@@ -1,0 +1,90 @@
+naturalDay,Date,true
+calendarYearMonth,String,true
+calendarYear_code,String,true
+calendarMonth,String,true
+logisticCenter_code,String,true
+manufacturingDate,Date,true
+workingDayHoliday,String,true
+manufacturingPeriod,String,true
+manufacturingWeek,String,true
+distributionChannel_code,String,true
+multLogisticCenter,String,true
+manufacturingFaseOperation,String,true
+captorManufacturingOrder,String,true
+mainRef,String,true
+RefProduced,String,true
+coproduct,String,true
+ManufacturingVersion,String,true
+manufacturingFamily,String,true
+captorWorkplace_code,String,true
+captorAssetGroup_code,String,true
+captorAssetGroup_desc,String,true
+captorWorkplace_desc,String,true
+workingDayCounterByRef,Short,true
+numberOfSetUps,Decimal(16 4),true
+setUpTime,Decimal(16 4),true
+numbOfPartsProducedInThePeriod,Decimal(16 4),true
+numbOfTheoreticalPartsPerHour,Decimal(16 4),true
+totalTimeWoProductionOrdersWithoutDemandsByRef,Decimal(16 4),true
+timeSpecialDtRef,Decimal(16 4),true
+dtDueToChangeoversByRef,Decimal(16 4),true
+dtDueToScheduledMaintenanceTasksByRef,Decimal(16 4),true
+dtDueToAutomaintenanceTasksByRef,Decimal(16 4),true
+dtDueToProcessesImprovementsTasksByRef,Decimal(16 4),true
+dtDueToInternalOrExternalProductionTransfersTasksByRef,Decimal(16 4),true
+dtDueToMeetingsTrainingsAndLunchesByRef,Decimal(16 4),true
+dtDueToOtherNecProcessOperationsWithMachineStoppedByRef,Decimal(16 4),true
+dtDueToMachineIncidencesByRef,Decimal(16 4),true
+dtDueToToolingIncidencesByRef,Decimal(16 4),true
+dtDueToRobotIncidencesByRef,Decimal(16 4),true
+dtDueToProcessAdjustmentsByRef,Decimal(16 4),true
+dtDueToOrganizationalIncidencesByRef,Decimal(16 4),true
+dtDueToWeldingIncidencesByRef,Decimal(16 4),true
+dtDueToQualityIncidencesByRef,Decimal(16 4),true
+dtDueToReworkOfPartsByRef,Decimal(16 4),true
+dtNotJustifiedByRef,Decimal(16 4),true
+dtDueToLackOfWorkByRef,Decimal(16 4),true
+totalTimeDueToMicrostopsByRef,Decimal(16 4),true
+timeSpentOnUnscheduledActivitiesInsideProductionByRef,Decimal(16 4),true
+timeSpecialDtRefPE002,Decimal(16 4),true
+timeSpentOnScheduledActivitiesOutsideProductionByRef,Decimal(16 4),true
+timeDuringWhichTheMachineIsProducingPartsByRef,Decimal(16 4),true
+factorPLCValue,Decimal(16 4),true
+totalnumbOfMicrostopsByRef,Integer,true
+timeSpentOnTechnicalChangesByRef,Decimal(16 4),true
+timeSpentOnSetupsByRef,Decimal(16 4),true
+numbOfDtDueToUnscheduledActivitiesInsideProductionByRef,Decimal(16 4),true
+numbOfDtDueToScheduledActivitiesOutsideProductionByRef,Short,true
+theoricalInstantCadenceNumeratorWorkplace,Decimal(16 4),true
+totalStrokesOrCyclesCarriedOutInThePeriodByRef,Integer,true
+numbOfGoodPartsB00Produced,Decimal(16 4),true
+numbOfGoodPartsProduced,Decimal(16 4),true
+theoProdRefSec,Decimal(16 4),true
+fullProdRefSec,Decimal(16 4),true
+numbOfPartsProducedInThePeriodPie,Decimal(16 4),true
+dtDueToNewIndustrializationProcessesTasksByRef,Decimal(16 4),true
+dtDueToFacilityImprovementsTasksByRef,Decimal(16 4),true
+totalStrokesOrCyclesCarriedOutInThePeriod,Decimal(16 4),true
+numbOfScrapParts,Decimal(16 4),true
+numbOfReworkParts,Integer,true
+numbOfSkinParts,Decimal(16 4),true
+numbOfSkinPartsReworked,Integer,true
+numbOfDtwoProductionOrdersWithoutDemandsByRef,Byte,true
+numbOfSpecialDtRef,Decimal(16 4),true
+numbOfDtDueToChangeoversByRef,Short,true
+numbOfDtDueToScheduledMaintenanceTasksByRef,Short,true
+numbOfDtDueToAutomaintenanceTasksByRef,Short,true
+numbOfDtDueToProcessesImprovementsTasksByRef,Short,true
+numbOfDtDueToIntOrExternalProductionTransfersTasksByRef,Short,true
+numbOfDtDueToMeetingsTrainingsAndLunchesByRef,Decimal(16 4),true
+numbOfDtDueToOtherNecProcessOpWithMachineStoppedByRef,Short,true
+numbOfDtDueToMachineIncidencesByRef,Short,true
+numbOfDtDueToToolingIncidencesByRef,Short,true
+numbOfDtDueToRobotIncidencesByRef,Decimal(16 4),true
+numbOfDtDueToProcessAdjustmentsByRef,Short,true
+numbOfDtDueToOrganizationalIncidencesByRef,Decimal(16 4),true
+numbOfDtDueToWeldingIncidencesByRef,Decimal(16 4),true
+numbOfDtDueToQualityIncidencesByRef,Short,true
+numbOfDtDueToReworkOfPartsByRef,Short,true
+numbOfDtNotJustifiedByRef,Decimal(16 4),true
+numbOfDtDueToNewIndustrializationProcessesTasksByRef,Short,true

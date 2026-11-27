@@ -1,0 +1,86 @@
+trigger: none
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - checkout: self
+    persistCredentials: true
+  - script: |
+      git config --global user.email "acamaramonedero@es.gestamp.es"
+      git config --global user.name "Angel Camara"
+      # extraheader global con el token: lo hereda el 'git clone' que release:perform
+      # hace a target/checkout (el credential de persistCredentials es local al workspace).
+      git config --global http.https://dev.azure.com/.extraheader "AUTHORIZATION: bearer $SYSTEM_ACCESSTOKEN"
+    displayName: 'Set GIT Identity'
+    env:
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+
+  - bash: |
+      echo Repository Name = $(Build.Repository.Name)
+      echo Branch = $(Build.SourceBranch)
+      echo BuildId = $(Build.BuildId)
+      echo Local Path Repository = $(Build.Repository.LocalPath)
+
+  - task: MavenAuthenticate@0
+    displayName: 'Maven Authenticate'
+    inputs:
+      artifactsFeeds: 'Hypatia_scala'
+
+  - task: Maven@3
+    displayName: 'mvn versions:use-latest-versions'
+    inputs:
+      mavenPomFile: 'lakehouse/pom.xml'
+      goals: 'versions:use-latest-versions'
+
+  - script: |
+      git fetch origin
+      git checkout main || git checkout -b main origin/main
+      if git diff --quiet lakehouse/pom.xml; then
+        echo "There are no changes in lakehouse/pom.xml."
+      else
+        git add lakehouse/pom.xml
+        git commit -m "Updating module dependencies of the lakehouse module to the latest versions of the artifacts"
+        git pull --rebase origin main
+        git push --force origin main
+      fi
+    displayName: 'Check if updated artifact versions of module dependencies are available'
+
+  - task: Maven@3
+    displayName: 'mvn release:prepare'
+    inputs:
+      mavenPomFile: 'lakehouse/pom.xml'
+      options: '-DmodulesToRelease=lakehouse'
+      mavenOptions: '-Xmx3072m'
+      publishJUnitResults: true
+      testResultsFiles: '**/TEST-*.xml'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.8'
+      jdkArchitectureOption: 'x64'
+      goals: '--batch-mode release:prepare'
+
+  - task: Maven@3
+    displayName: 'mvn release:perform'
+    inputs:
+      mavenPomFile: 'lakehouse/pom.xml'
+      options: '-DmodulesToRelease=lakehouse'
+      mavenOptions: '-Xmx3072m'
+      publishJUnitResults: true
+      testResultsFiles: '**/TEST-*.xml'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.8'
+      jdkArchitectureOption: 'x64'
+      goals: '--batch-mode release:perform'
+
+  - task: Copyfiles@2
+    displayName: 'Copy hypatia-lakehouse JARs to Artifact Staging Directory'
+    inputs:
+      sourceFolder: '$(Build.Repository.LocalPath)/lakehouse/target'
+      artifactName: 'hypatia-lib-scala-lakehouse-jar-with-dependencies.jar'
+      targetFolder: $(Build.ArtifactStagingDirectory)
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Aartifact'
+    inputs:
+      pathToPublish: $(Build.ArtifactStagingDirectory)
+      artifactName: 'drop'

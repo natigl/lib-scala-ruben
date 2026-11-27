@@ -1,0 +1,10 @@
+countryiso,String,true
+country_desc,String,true
+subjectDescriptor,String,true
+subjectDetail,String,true
+unitMeasure_code,String,true
+unit,String,true
+dateEstimatedStartAfter,Timestamp,true
+period,Timestamp,true
+value,String,true
+version_code,String,true

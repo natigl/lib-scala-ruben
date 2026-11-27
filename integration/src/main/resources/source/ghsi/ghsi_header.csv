@@ -1,0 +1,4 @@
+id,Long,true
+year,Short,true
+quarter,Byte,true
+recordModifiedDate,Timestamp,true

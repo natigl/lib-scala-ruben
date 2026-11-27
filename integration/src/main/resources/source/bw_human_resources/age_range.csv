@@ -1,0 +1,5 @@
+ageRange_code,String,true
+itemVersion_code,String,true
+changed_code,String,true
+order,String,true
+ageRange_Desc,String,true

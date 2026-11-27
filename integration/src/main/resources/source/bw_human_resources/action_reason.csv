@@ -1,0 +1,4 @@
+actionType_code,String,true
+actionReason_code,String,true
+language_code,String,true
+actionreason_desc,String,true

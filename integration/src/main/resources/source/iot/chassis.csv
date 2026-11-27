@@ -1,0 +1,17 @@
+TimeStamp,String,false
+Value,String,false
+Plant,String,false
+Line,String,false
+Asset,String,false
+SubAsset,String,false
+SignalName,String,false
+Cell,String,false
+Operation,String,false
+ProcessType,String,false
+Technology,String,false
+member0,String,false
+member1,String,false
+member2,String,false
+member3,String,false
+member4,String,false
+member5,String,false

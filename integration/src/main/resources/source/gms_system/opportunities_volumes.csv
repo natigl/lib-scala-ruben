@@ -1,0 +1,10 @@
+customerPlantcodeAndVehiclecode,String,true
+versionID,Integer,true
+year,Integer,true
+planning,Integer,true
+percentage,Double,true
+totalPlanning,Integer,true
+dateOnWhichTheRecordWasCreated,Timestamp,true
+createdBy,String,true
+modifiedOn,Timestamp,true
+modifiedBy,String,true

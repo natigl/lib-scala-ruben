@@ -1,0 +1,72 @@
+naturalDay,Date,true
+calendarYearMonth,String,true
+calendarYear_code,String,true
+calendarMonth,String,true
+logisticCenter_code,String,true
+manufacturingDate,Date,true
+workingDayHoliday,String,true
+manufacturingPeriod,String,true
+manufacturingWeek,String,true
+distributionChannel_code,String,true
+multLogisticCenter,String,true
+manufacturingFaseOperation,String,true
+captorWorkplace_code,String,true
+captorAssetGroup_code,String,true
+RefProduced,String,true
+ManufacturingVersion,String,true
+totalTimeWoProduction,Decimal(16 4),true
+totalTimeSpecialStops,Decimal(16 4),true
+dtDueToChangeovers,Decimal(16 4),true
+dtDueToScheduledMaintenanceTasks,Decimal(16 4),true
+dtDueToAutomaintenanceTasks,Decimal(16 4),true
+dtDueToProcessesImprovementsTasks,Decimal(16 4),true
+dtDueToInternalOrExternalProductionTransfersTasks,Decimal(16 4),true
+dtDueToMeetingsTrainingsAndLunches,Decimal(16 4),true
+dtDueToOtherNecProcessOperationsWithMachineStopped,Decimal(16 4),true
+dtDueToMachineIncidences,Decimal(16 4),true
+dtDueToToolingIncidences,Decimal(16 4),true
+dtDueToRobotIncidences,Decimal(16 4),true
+dtDueToProcessAdjustments,Decimal(16 4),true
+dtDueToOrganizationalIncidences,Decimal(16 4),true
+dtDueToWeldingIncidences,Decimal(16 4),true
+dtDueToQualityIncidences,Decimal(16 4),true
+dtDueToReworkOfParts,Decimal(16 4),true
+dtNotJustified,Decimal(16 4),true
+dtDueToLackOfWork,Decimal(16 4),true
+totalTimeDueToMicrostops,Decimal(16 4),true
+timeSpentOnUnscheduledActivitiesInsideProduction,Decimal(16 4),true
+timeSpecialDt,Decimal(16 4),true
+timeSpentOnScheduledActivitiesOutsideProduction,Decimal(16 4),true
+timeDuringWhichTheMachineIsProducingParts,Decimal(16 4),true
+totalWorkingDaysOfThePeriod,Short,true
+5Or6DaysWeek3ShiftsDay8HoursShift,Short,true
+totalnumbOfMicrostops,Short,true
+totalStrokesOrCyclesCarriedOutInThePeriod,Integer,true
+timeSpentOnTechnicalChanges,Decimal(16 4),true
+timeSpentOnSetups,Decimal(16 4),true
+numbOfdtDueToUnscheduledActivitiesInsideProduction,Integer,true
+numbOfdtDueToScheduledActivitiesOutsideProduction,Short,true
+theoProdWorkplaceSec,Decimal(16 4),true
+fullProdWorkplaceSec,Decimal(16 4),true
+dtDueToNewIndustrializationProcessesTasks,Decimal(16 4),true
+dtDueToFacilityImprovementsTasks,Decimal(16 4),true
+numbOfdtwoProductionOrdersWithoutDemands,Short,true
+numbofSpecialdtWorkplace,Decimal(16 4),true
+numbOfdtDueToChangeovers,Short,true
+numbOfdtDueToScheduledMaintenanceTasks,Short,true
+numbOfdtDueToAutomaintenanceTasks,Short,true
+numbOfdtDueToProcessesImprovementsTasks,Short,true
+numbOfdtDueToInternalOrExternalProductionTransfersTasks,Short,true
+numbOfdtDueToMeetingsTrainingsAndLunches,Short,true
+numbOfdtDueToOtherNecProcessOperationsWithMachineStopped,Short,true
+numbOfdtDueToMachineIncidences,Short,true
+numbOfdtDueToToolingIncidences,Short,true
+numbOfdtDueToRobotIncidences,Short,true
+numbOfdtDueToProcessAdjustments,Short,true
+numbOfdtDueToOrganizationalIncidences,Short,true
+numbOfdtDueToWeldingIncidences,Short,true
+numbOfdtDueToQualityIncidences,Short,true
+numbOfdtDueToReworkOfParts,Short,true
+numbOfdtNotJustified,Short,true
+numbOfdtDueToNewIndustrializationProcessesTasks,Short,true
+numbOfdtDueToFacilityImprovementsTasks,Short,true

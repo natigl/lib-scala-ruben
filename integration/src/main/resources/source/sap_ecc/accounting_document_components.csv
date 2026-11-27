@@ -1,0 +1,9 @@
+MANDT,String,true
+accountingDocumentNumber,String,true
+itemInMaterialDocument,Short,true
+materialDocumentYear,Short,true
+financialCompany_code,String,true
+dueDateBaseline,Date,true
+cashDiscountDays,Integer,true
+accountType,String,true
+planningDateTreasury,String,true

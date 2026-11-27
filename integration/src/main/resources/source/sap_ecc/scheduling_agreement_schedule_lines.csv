@@ -1,0 +1,5 @@
+purchasingDocumentNumber,String,true
+itemNumberOfPurchasingDocument,Integer,true
+deliveryScheduleLineCounter,Integer,true
+itemDeliveryDate,Date,true
+quantity,Decimal(16 4),true

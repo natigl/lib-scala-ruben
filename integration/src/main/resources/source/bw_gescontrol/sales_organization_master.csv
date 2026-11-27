@@ -1,0 +1,12 @@
+salesOrganization_code,String,true
+language_code,String,true
+salesOrganization_desc,String,true
+objectVersion,String,true
+changeFlag,String,true
+financialCompany_code,String,true
+country_code,String,true
+currency,String,true
+fiscalYearVariant_code,String,true
+customerNumberForInternalSettlement,String,true
+statisticsCurrency,String,true
+logicalNameOfTheSystem,String,true

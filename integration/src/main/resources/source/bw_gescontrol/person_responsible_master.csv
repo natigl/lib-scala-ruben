@@ -1,0 +1,4 @@
+personResponsible_code,String,true
+personResponsible_desc,String,true
+objectVersion,String,true
+changeFlag,String,true

@@ -1,0 +1,4 @@
+Id,String,false
+Code,String,false
+PlantCode,String,false
+LineTypeId,String,false

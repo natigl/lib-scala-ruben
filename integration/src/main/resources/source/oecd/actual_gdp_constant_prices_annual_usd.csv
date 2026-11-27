@@ -1,0 +1,7 @@
+country_desc,String,true
+constantGDP,String,true
+period,Timestamp,true
+unitMeasure_code,String,true
+typeOfData,String,true
+value,Decimal(38 18),true
+typeOfValue,String,true

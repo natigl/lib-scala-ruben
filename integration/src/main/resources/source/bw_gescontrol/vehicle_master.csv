@@ -1,0 +1,13 @@
+vehicle_code,String,true
+language_code,String,true
+vehicle_desc,String,true
+objectVersion,String,true
+changeFlag,String,true
+project_code,String,true
+platform_code,String,true
+statusVehicle_code,String,true
+customer_code,String,true
+financialBrand_code,String,true
+replacementVehicle_code,String,true
+commercialBrand_code,String,true
+productionNameplate_code,String,true

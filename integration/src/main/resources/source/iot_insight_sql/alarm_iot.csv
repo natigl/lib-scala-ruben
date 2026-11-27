@@ -1,0 +1,8 @@
+Id,Integer,false
+Name,String,false
+Description,String,true
+Plant,String,true
+Line,String,true
+Asset,String,false
+SubAsset,String,true
+Priority,String,true

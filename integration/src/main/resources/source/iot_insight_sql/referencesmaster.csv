@@ -1,0 +1,10 @@
+ReferenceId,String,false
+ReferenceGuid,String,false
+PartReference,String,false
+ReferenceClient,String,false
+ReferenceSap,String,false
+Client,String,false
+PartType,String,false
+Deleted,Boolean,false
+PlantCode,String,false
+LineCode,String,false

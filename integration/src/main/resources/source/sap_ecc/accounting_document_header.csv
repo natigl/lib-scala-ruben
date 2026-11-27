@@ -1,0 +1,7 @@
+financialCompany_code,String,true
+accountingDocumentNumber,String,true
+materialDocumentYear,Short,true
+documentType,String,true
+referenceKey,String,true
+documentDate,Date,true
+postingDate,Date,true

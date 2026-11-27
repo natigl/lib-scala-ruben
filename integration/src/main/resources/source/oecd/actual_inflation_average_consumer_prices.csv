@@ -1,0 +1,5 @@
+country_desc,String,true
+inflation,String,true
+period,Timestamp,true
+unitMeasure_code,String,true
+value,Decimal(38 18),true

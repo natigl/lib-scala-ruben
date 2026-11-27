@@ -1,0 +1,16 @@
+mandt,String,true
+material_code,String,true
+alternativeUnitOfMeasure,String,true
+numeratorForConversionToBaseUnitsOfMeasure,Decimal(16 4),true
+denominatorForConversionToBaseUnitsOfMeasure,Decimal(16 4),true
+internationalArticleNumber,String,true
+categoryOfInternationalArticleNumber,String,true
+materialLength,Decimal(16 4),true
+materialWidth,Decimal(16 4),true
+materialHeight,Decimal(16 4),true
+dimensionUnit,String,true
+materialVolume,Decimal(16 4),true
+volumeUnit,String,true
+materialGrossWeight,Decimal(16 4),true
+weightUnit,String,true
+mesub,String,true

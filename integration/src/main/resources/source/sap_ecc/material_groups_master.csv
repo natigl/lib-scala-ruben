@@ -1,0 +1,15 @@
+mandt,String,true
+materialGroup,String,true
+valuationClass,String,true
+spart,String,true
+lref3,String,true
+wwgda,String,true
+wwgpa,String,true
+abtnr,String,true
+begru,String,true
+gewei,String,true
+j_1bnbm,String,true
+ekwsl,String,true
+anlkl,String,true
+def_schdsc,String,true
+price_group,String,true

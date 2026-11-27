@@ -1,0 +1,5 @@
+MANDT,String,true
+language_code,String,true
+materialGroup,String,true
+materialGroup_desc,String,true
+materialGroup_desclg,String,true

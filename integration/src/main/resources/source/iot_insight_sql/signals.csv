@@ -1,0 +1,14 @@
+SignalId,String,false
+SignalName,String,false
+Description,String,true
+Cell,String,true
+Asset,String,false
+SubAsset,String,true
+PlantCode,String,false
+LineCode,String,false
+Operation,String,true
+ProcessTypeId,String,true
+DataTypeId,String,true
+IsRecipe,String,true
+UnitsId,String,true
+Source,String,true

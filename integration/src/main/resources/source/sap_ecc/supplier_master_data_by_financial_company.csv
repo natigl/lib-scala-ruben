@@ -1,0 +1,3 @@
+accountNumberOfVendorOrCreditor,String,true
+financialCompany_code,String,true
+termsOfPaymentKey,String,true

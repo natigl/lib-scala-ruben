@@ -1,0 +1,4 @@
+material_code,String,true
+valuationArea,String,true
+valuationType,String,true
+valuationClass,String,true

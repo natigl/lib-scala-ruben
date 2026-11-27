@@ -1,0 +1,6 @@
+Id,Integer,false
+Plant,String,false
+Line,String,true
+TimeZone,String,true
+ManufacturingProcess,String,true
+Technology,String,true

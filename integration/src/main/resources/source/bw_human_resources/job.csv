@@ -1,0 +1,11 @@
+job_code,String,true
+language_code,String,true
+dateto,Timestamp,true
+dateFrom,Timestamp,true
+job_Descsh,String,true
+Job_Descmd,String,true
+compensationJobGroup,String,true
+subfamily_code,String,true
+jobFamily_code,String,true,
+jobfamily_desc,String,true,
+jobGroup_code,String,true

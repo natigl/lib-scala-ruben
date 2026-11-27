@@ -1,0 +1,11 @@
+controllingArea_code,String,true
+controllingArea_desc,String,true
+objectVersion,String,true
+changeFlag,String,true
+chartsOfAccounts_code,String,true
+currency,String,true
+currencyTypeProfitCenterLocalCurrency,String,true
+fiscalYearVariant_code,String,true
+financialManagementArea,String,true
+logicalNameOfTheSystem,String,true
+standardHierarchyCostCenters,String,true

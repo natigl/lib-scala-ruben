@@ -1,0 +1,33 @@
+processYear,Short,true
+purchasingGroup_code,String,true
+process_code,Integer,true
+idItem,Integer,true
+article_code,String,true
+item_desc,String,true
+openBudget,Decimal(16 4),true
+openQuantity,Decimal(16 4),true
+request_code,Integer,true
+commodity,String,true
+materialGroup,String,true
+materialFamily,String,true
+materialSubfamily,String,true
+supplyStartDate,Date,true
+supplyEndDate,Date,true
+lastDateOfValidationOfCommitte,Date,true
+unitaryItemPrice,Decimal(16 4),true
+itemUnitOfMeasure,String,true
+vendor_code,String,true
+awardedQuantity,Decimal(16 4),true
+awardedAmount,Decimal(16 4),true
+numberOfOffers,Short,true
+exchangeRate,Decimal(16 4),true
+country_code,String,true
+financialCompany_code,String,true
+logisticCenter_code,String,true
+itemStatus,String,true
+approvalWorkflow,String,true
+processCodeGroupWhereItemIsIT,String,true
+lineOfRequestBelongToItem,Short,true
+investmentOrderOrInvestmentExpense,String,true
+wbsElement_code,String,true
+costCenter_code,String,true

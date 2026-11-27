@@ -1,0 +1,16 @@
+purchasingDocumentNumber,String,true
+financialCompany_code,String,true
+purchasingOrganization,String,true
+nameOfPersonWhoCreatedTheObject,String,true
+accountNumberOfVendorOrCreditor,String,true
+documentCurrency,String,true
+licitation,String,true
+dateOnWhichRecordWasCreated,Date,true
+termsOfPaymentKey,String,true
+purchasingDocumentDate,Date,true
+pODocumentClass,String,true
+reasonForOrderingHeader,String,true
+fSUserIssuerOfPurchaseOrder,String,true
+codeOfIssuerOfPurchaseOrder,String,true
+exchangeRate,Decimal(16 5),true
+purchasingDocumentCategory,String,true

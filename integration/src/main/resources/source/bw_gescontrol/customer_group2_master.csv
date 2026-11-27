@@ -1,0 +1,8 @@
+customerGroup_code,String,true
+language_code,String,true
+customerGroup_desc,String,true
+objectVersion,String,true
+changeFlag,String,true
+customerGroupSAP_code,String,true
+customerGroupStatus_code,String,true
+hierarchyLevel,String,true

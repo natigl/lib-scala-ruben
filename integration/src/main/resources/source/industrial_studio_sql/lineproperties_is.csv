@@ -1,0 +1,5 @@
+Id,Integer,false
+Plant,String,true
+Line,String,true
+PropertyKey,String,true
+PropertyValue,String,true

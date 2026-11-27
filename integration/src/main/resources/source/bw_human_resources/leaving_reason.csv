@@ -1,0 +1,7 @@
+actionType_code,String,true
+leavingReason_code,String,true
+itemVersion_code,String,true
+changed_code,String,true
+typeOfLeaving_code,String,true
+leavingReason_desc,String,true
+language_code,String,true

@@ -1,0 +1,13 @@
+FeatureInfoId,String,false
+FeatureInfoGuid,String,false
+PartReferenceId,String,false
+Asset,String,false
+LayoutName,String,false
+Working,String,false
+FeatureReferenceClient,String,false
+FeatureTypeId,String,false
+Assembly,String,false
+FeatureId,String,false
+PlantCode,String,false
+LineCode,String,false
+CriticalFeature,Boolean,false

@@ -1,0 +1,9 @@
+purchasingDocumentNumber,String,true
+itemNumberOfPurchasingDocument,Integer,true
+sequentialNumberOfAccountAssignment,Byte,true
+costCenter,String,true
+orderNumber,String,true
+wBSElement,String,true
+network,String,true
+routingNumberOfOperationsInTheOrder,Integer,true
+generalCounterForOrder,Integer,true

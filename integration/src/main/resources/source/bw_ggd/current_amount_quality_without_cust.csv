@@ -1,0 +1,6 @@
+calendarYear_code,String,true
+calendarMonth,String,true
+calendarYearMonth,String,true
+managementCompany_code,String,true
+importfornoQuality,Decimal(16 4),true
+adjustedTurnover,Integer,true

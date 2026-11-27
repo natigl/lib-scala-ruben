@@ -1,0 +1,104 @@
+trigger: none
+
+# this pipeline will be triggered by another pipeline
+resources:
+  pipelines:
+    - pipeline: PREVIOUS-hypatia-lib-scala-commons-release   # Name of the pipeline resource
+      source: hypatia-lib-scala-commons-release # Name of the pipeline in Azure DevOps
+      # project: Trigger-Pipeline-From-Another-Pipeline # Required only if the source pipeline is in another project
+      trigger: true # enable the trigger
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - checkout: self
+    persistCredentials: true
+  - script: |
+      git config --global user.email "acamaramonedero@es.gestamp.es"
+      git config --global user.name "Angel Camara"
+      # extraheader global con el token: lo hereda el 'git clone' que release:perform
+      # hace a target/checkout (el credential de persistCredentials es local al workspace).
+      git config --global http.https://dev.azure.com/.extraheader "AUTHORIZATION: bearer $SYSTEM_ACCESSTOKEN"
+    displayName: 'Set GIT Identity'
+    env:
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+
+  - bash: |
+      echo Repository Name = $(Build.Repository.Name)
+      echo Branch = $(Build.SourceBranch)
+      echo BuildId = $(Build.BuildId)
+      echo Local Path Repository = $(Build.Repository.LocalPath)
+      echo Trigger type = $(Build.Reason)
+
+  - task: MavenAuthenticate@0
+    displayName: 'Maven Authenticate'
+    inputs:
+      artifactsFeeds: 'Hypatia_scala'
+
+  - task: Maven@3
+    displayName: 'mvn versions:use-latest-versions'
+    inputs:
+      mavenPomFile: 'hyptmanager/pom.xml'
+      goals: 'versions:use-latest-versions'
+
+  - script: |
+      if [ "$(Build.Reason)" == "ResourceTrigger" ]; then
+      echo "This is a ResourceTrigger run, triggered by another pipeline (hypatia-lib-scala-commons-release)"
+      echo "The builds of the modules ingestion, quality, integration and hyptmanager need to be staggered."
+      sleep 1080
+      else
+      echo "This run is not triggered by another pipeline (hypatia-lib-scala-commons-release)"
+      fi
+    displayName: 'Checking if the build is triggered by another pipeline'
+
+  - script: |
+      git fetch origin
+      git checkout main || git checkout -b main origin/main
+      if git diff --quiet hyptmanager/pom.xml; then
+        echo "There are no changes in hyptmanager/pom.xml."
+      else
+        git add hyptmanager/pom.xml
+        git commit -m "Updating module dependencies of the hyptmanager module to the latest versions of the artifacts"
+        git pull --rebase origin main
+        git push --force origin main
+      fi
+    displayName: 'Check if module dependencies have changed to the latest version'
+
+  - task: Maven@3
+    displayName: 'mvn release:prepare'
+    inputs:
+      mavenPomFile: 'hyptmanager/pom.xml'
+      options: '-DmodulesToRelease=hyptmanager'
+      mavenOptions: '-Xmx3072m'
+      publishJUnitResults: true
+      testResultsFiles: '**/TEST-*.xml'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.8'
+      jdkArchitectureOption: 'x64'
+      goals: '--batch-mode release:prepare'
+
+  - task: Maven@3
+    displayName: 'mvn release:perform'
+    inputs:
+      mavenPomFile: 'hyptmanager/pom.xml'
+      options: '-DmodulesToRelease=hyptmanager'
+      mavenOptions: '-Xmx3072m'
+      publishJUnitResults: true
+      testResultsFiles: '**/TEST-*.xml'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.8'
+      jdkArchitectureOption: 'x64'
+      goals: '--batch-mode release:perform'
+
+  - task: Copyfiles@2
+    displayName: 'Copy hypatia-hyptmanager JARs to Artifact Staging Directory'
+    inputs:
+      sourceFolder: '$(Build.Repository.LocalPath)/hyptmanager/target'
+      artifactName: 'hypatia-lib-scala-hyptmanager-jar-with-dependencies.jar'
+      targetFolder: $(Build.ArtifactStagingDirectory)
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Aartifact'
+    inputs:
+      pathToPublish: $(Build.ArtifactStagingDirectory)
+      artifactName: 'drop'

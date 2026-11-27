@@ -1,0 +1,16 @@
+timestamp,String,false
+logisticCenter_code,String,false
+line_code,String,false
+asset_code,String,false
+subasset_code,String,false
+signalName,String,false
+cell_code,String,false
+operation_code,String,false
+processType,String,false
+technology_code,String,false
+member0,String,false
+member1,String,false
+member2,String,false
+member3,String,false
+member4,String,false
+member5,String,false

@@ -1,0 +1,8 @@
+AlarmID,String,false
+SignalName,String,false
+Description,String,false
+PlantCode,String,false
+LineCode,String,false
+Asset,String,false
+SubAsset,String,true
+Priority,String,true

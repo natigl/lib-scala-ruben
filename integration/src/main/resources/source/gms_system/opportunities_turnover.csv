@@ -1,0 +1,17 @@
+saleId,Integer,false
+versionID,Integer,false
+customerPlantcodeAndVehiclecode,String,false
+currencyType,String,false
+currency,String,false
+year,String,false
+volume_Units,Integer,true
+pricePerVehicle,Double,true
+tO_without_LTAAndQS,Double,false
+priceWithLTAandValueAdded,Double,true
+tO_with_LTA,Double,false
+qS_Discount,Double,true
+tO_with_LTAAndQS,Double,false
+dateOnWhichTheRecordWasCreated,Timestamp,false
+createdBy,String,false
+modifiedOn,Timestamp,true
+modifiedBy,String,false

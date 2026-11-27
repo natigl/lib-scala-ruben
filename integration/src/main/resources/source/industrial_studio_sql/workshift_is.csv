@@ -1,0 +1,13 @@
+Id,Integer,false
+Plant,String,true
+Line,String,true
+ShiftId,String,true
+StartTime,String,true
+EndTime,String,true
+Monday,Boolean,true
+Tuesday,Boolean,true
+Wednesday,Boolean,true
+Thursday,Boolean,true
+Friday,Boolean,true
+Saturday,Boolean,true
+Sunday,Boolean,true

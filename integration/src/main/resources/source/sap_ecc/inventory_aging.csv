@@ -1,0 +1,60 @@
+logisticCenter_code,String,true
+material_code,String,true
+accountNumberOfVendorOrCreditor,String,true
+batchNumber,String,true
+localDate,Date,true
+creationDate,Date,true
+notOwnSpecialStock,String,true
+notSupplierStock,String,true
+localTime,String,true
+materialGroup,String,true
+materialGroupHierarchy,String,true
+productHierarchy,String,true
+oldMaterialNumber,String,true
+grossWeight,Decimal(16 4),true
+valuatedUnrestrictedUseStock,Decimal(16 4),true
+valuationClass,String,true
+standardPrice,Decimal(16 4),true
+priceUnit,Decimal(16 4),true
+materialDescriptionInUpperCase,String,true
+quantityReceivedOrQuantityRequired,Decimal(16 4),true
+name1,String,true
+purchaseOrderUnitOfMeasure,String,true
+project,String,true
+vehicle,String,true
+originGroupAsSubdivisionOfCostElement,String,true
+movingAveragePricePeriodicUnitPrice,Decimal(16 4),true
+stockValue,Decimal(16 4),true
+documentCurrency,String,true
+stockValueInGroupCurrency,Decimal(16 4),true
+groupCurrencyKey,String,true
+clientPartNumber,String,true
+customerDailyAverageCty,Decimal(16 4),true
+safetyStock,Decimal(16 4),true
+realizableValue,Decimal(16 5),true
+storageBin,String,true
+systemTime,String,true
+timeZone,String,true
+priceControlIndicator,String,true
+realizableValueInLocalCurrency,Decimal(16 5),true
+localCurrency,String,true
+storageType,String,true
+storageLocation,String,true
+warehouseType,String,true
+vendorAccountNumber,String,true
+customerNumber,String,true
+valuatedUnrestrictedUseStock2,Decimal(16 4),true
+stockInQualityInspection,Decimal(16 4),true
+blockedStock,Decimal(16 4),true
+blockedStockReturns,Decimal(16 4),true
+stockInVendor,Decimal(16 4),true
+stockInCustomer,Decimal(16 4),true
+batchCreationDate,Date,true
+shelfLifeExpirationOrBestBeforeDate,Date,true
+creationDateInMCHB,Date,true
+dateOfLastChangeInMCHB,Date,true
+uTCTimeStamp,Date,true
+materialType,String,true
+typology,String,true
+counter,Short,true
+fIFO,String,true

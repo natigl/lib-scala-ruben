@@ -1,0 +1,9 @@
+id,Long,false
+saleId,Long,false
+versionID,Long,false
+year,Integer,false
+discountAmount,Decimal(18 4),false
+dateOnWhichTheRecordWasCreated,Timestamp,false
+createdBy,String,false
+modifiedOn,Timestamp,true
+modifiedBy,String,true

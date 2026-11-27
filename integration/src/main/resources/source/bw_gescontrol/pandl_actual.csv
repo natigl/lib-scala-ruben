@@ -1,0 +1,44 @@
+businessUnit_code,String,true
+chartsOfAccounts_code,String,true
+financialCompany_code,String,true
+controllingArea_code,String,true
+costCenter_code,String,true
+country_code,String,true
+currency_code,String,true
+currencyType_code,String,true
+genericDepartment_code,String,true
+fiscalYear_code,String,true
+fiscalYearPeriod_code,String,true
+gLAccount_code,String,true
+halfYear_code,String,true
+localAccount_code,String,true
+localChartsOfAccounts,String,true
+localCurrency_code,String,true
+managementCompany_code,String,true
+managementEpigraph_code,String,true
+orderType_code,String,true
+postingPeriod_code,String,true
+profitCenter_code,String,true
+quarter_code,String,true
+region_code,String,true
+businessUnitSegments_code,String,true
+tradingPartner_code,String,true
+wbsElement_code,String,true
+accumulatedAmountBudget,Decimal(38 18),true
+amountBudget,Decimal(38 18),true
+recordCounter,Integer,true
+accumulatedAmountInGroupCurrency,Decimal(38 18),true
+monthlyAmountInGroupCurrency,Decimal(38 18),true
+accumulatedAmountLocalCurrency,Decimal(38 18),true
+amountLocalCurrency,Decimal(38 18),true
+taxes,Decimal(38 18),true
+debitCreditInd_code,String,true
+fiscalYearVariant_code,String,true
+adapttypeto2016_code,String,true
+adjustmentFlag_code,String,true
+adjustmenttext1_code,String,true
+adjustmenttext2_code,String,true
+adjustmenttext3_code,String,true
+numberAdjustmFI_code,String,true
+customer_code,String,true
+vendor_code,String,true

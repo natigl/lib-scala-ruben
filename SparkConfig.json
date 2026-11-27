@@ -1,0 +1,13 @@
+{
+  "master": "local[*]",
+  "applicationName": "Kafka Streaming Autoloader",
+  "spark.sql.shuffle.partitions": "144",
+  "spark.executor.memoryOverhead": "6g",
+  "spark.eventLog.enabled": "true",
+  "spark.databricks.delta.formatCheck.enabled": "false",
+  "spark.databricks.delta.optimizeWrite.enabled": "true",
+  "spark.databricks.delta.autoCompact.enabled": "true",
+  "spark.sql.files.ignoreMissingFiles": "true",
+  "spark.databricks.dataLineage.enabled": "true",
+  "spark.databricks.delta.properties.defaults.enableChangeDataFeed": "true"
+}

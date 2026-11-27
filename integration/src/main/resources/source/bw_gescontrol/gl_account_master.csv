@@ -1,0 +1,12 @@
+glAccount_code,String,true
+language_code,String,true
+g/LAccount_desc,String,true
+chartsOfAccounts_code,String,true
+objectVersion,String,true
+changeFlag,String,true
+indicatorGLAccountisBalanceSheetAccount,String,true
+indicadorGLAccountisPandLAccount,String,true
+tradingPartner_code,String,true
+sBOAlternativeAccountNumber,String,true
+localChartsOfAccounts_code,String,true
+alternativeGLAccount,String,true

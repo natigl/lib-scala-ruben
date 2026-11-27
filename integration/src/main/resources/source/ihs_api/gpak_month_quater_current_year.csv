@@ -1,0 +1,24 @@
+regionStateProvinceCountry,String,true
+market,String,true
+countryTerritory,String,true
+designParent,String,true
+manufacturer,String,true
+salesParent,String,true
+productionBrand,String,true
+productionNameplate,String,true
+vehicle_code,String,true
+platform,String,true
+program,String,true
+carTruck,String,true
+globalProductionSegment,String,true
+sOPDate,String,true
+eOPDate,String,true
+productionPlant,String,true
+gVWClass,String,true
+monthYear,String,true
+volumeMonthYear,Decimal(38 18),true
+quarterYear,String,true
+volumeQuarterYear,Decimal(38 18),true
+year,String,true
+volumeYear,Decimal(38 18),true
+version_code,String,true

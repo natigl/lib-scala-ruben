@@ -1,0 +1,19 @@
+invoiceDocument,String,true
+materialDocumentYear,Short,true
+itemInInvoiceDocument,Integer,true
+financialCompany_code,String,true
+material_code,String,true
+logisticCenter_code,String,true
+quantity,Decimal(16 4),true
+pOUnitOfMeasure,String,true
+amountInDocumentCurrency,Decimal(16 4),true
+debitCreditIndicator,String,true
+purchasingDocumentNumber,String,true
+itemNumberOfPurchasingDocument,Integer,true
+sequentialNumberOfAccountAssignment,Short,true
+indicatorSubsequentDebitCredit,Boolean,true
+deliveryCostsValue,Decimal(16 4),true
+documentNoOfAReferenceDocument,String,true
+fiscalYearOfCurrentPeriod,Short,true
+itemOfAReferenceDocument,Short,true
+indicatorUpdatePurchaseOrderDeliveryCosts,Boolean,true

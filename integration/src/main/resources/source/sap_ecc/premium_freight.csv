@@ -1,0 +1,20 @@
+logisticCenter_code,String,true
+fiscalYear,Short,true
+level,Byte,true
+sublevel,Byte,true
+customer,String,true
+material_code,String,true
+currency,String,true
+januaryPremiumFreightCosts,Decimal(16 4),true
+februaryPremiumFreightCosts,Decimal(16 4),true
+marchPremiumFreightCosts,Decimal(16 4),true
+aprilPremiumFreightCosts,Decimal(16 4),true
+mayPremiumFreightCosts,Decimal(16 4),true
+junePremiumFreightCosts,Decimal(16 4),true
+julyPremiumFreightCosts,Decimal(16 4),true
+augustPremiumFreightCosts,Decimal(16 4),true
+septemberPremiumFreightCosts,Decimal(16 4),true
+octoberPremiumFreightCosts,Decimal(16 4),true
+novemberPremiumFreightCosts,Decimal(16 4),true
+decemberPremiumFreightCosts,Decimal(16 4),true
+unitOfMeasure,String,true

@@ -1,0 +1,30 @@
+purchasingDocumentNumber,String,true
+itemNumberOfPurchasingDocument,Integer,true
+logisticCenter_code,String,true
+deletionBlockIndicator,String,true
+material_code,String,true
+shortText,String,true
+departmentNumInversion,String,true
+quantity,Decimal(16 4),true
+purchaseOrderUnitOfMeasure,String,true
+netPrice,Decimal(16 4),true
+priceUnit,Decimal(16 4),true
+netOrderValueInPOCurrency,Decimal(16 4),true
+accountAssignmentCategory,String,true
+returnsItem,Boolean,true
+nameOfRequisitionerRequester,String,true
+reasonForOrdering,String,true
+orderAcknowledgmentNumber,String,true
+fSItemProcessOfPurchaseOrderItems,String,true
+purchaseRequisitionNumber,String,true
+itemNumberOfPurchaseRequisition,Integer,true
+storageLocation,String,true
+deliveryCompletedIndicator,Boolean,true
+pOVIMApprover,String,true
+goodsReceiptIndicator,Boolean,true
+numberOfContract,String,true
+itemNumberOfContract,Integer,true
+numberOfSubcontractingHours,Integer,true
+subcontractingMaterialPrice,Integer,true
+finalInvoiceIndicator,Boolean,true
+flagInvestmentReleased,Boolean,true

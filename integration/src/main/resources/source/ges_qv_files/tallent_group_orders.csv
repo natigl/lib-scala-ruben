@@ -1,0 +1,17 @@
+purchasingDocumentNumber,String,true
+itemNumberOfPurchasingDocument,Integer,true
+material_code,String,true
+logisticCenter_code,String,true
+purchasingDocumentDate,Date,true
+deliveryQuantity,Decimal(16 5),true
+pOUnitOfMeasure,String,true
+amountInDocumentCurrency,Decimal(16 5),true
+documentCurrency,String,true
+fSItemProcessOfPurchaseOrderItems,String,true
+structureForPurchasingMaterialFullstep,String,true
+taxNumber1,String,true
+vendor_code,String,true
+isIntegration,Boolean,true
+purchaseRequisitionNumber,String,true
+purchaseType,String,true
+priceUnit,Decimal(16 5),true

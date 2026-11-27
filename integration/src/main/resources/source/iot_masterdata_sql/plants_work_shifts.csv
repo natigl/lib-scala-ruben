@@ -1,0 +1,4 @@
+Id,Integer,false
+PlantCode,String,false
+StartTime,String,false
+EndTime,String,false

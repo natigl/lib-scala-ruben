@@ -1,0 +1,6 @@
+project_code,String,true
+language_code,String,true
+project_desc,String,true
+objectVersion,String,true
+changeFlag,String,true
+projectStatus,String,true

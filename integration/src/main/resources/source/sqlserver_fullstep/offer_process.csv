@@ -1,0 +1,91 @@
+processYear,String,true
+purchasingGroup_code,String,true
+process_code,Integer,true
+idItem,Integer,true
+vendor_code,String,true
+offerRejection,Boolean,true
+offerDate,String,true
+offerMode,String,true
+offered,Boolean,true
+numberOfOffers,String,true
+offerStatus,String,true
+amountLocalCurrency,String,true
+rfpToolingPrice,Decimal(16 4),true
+rfpIncoterm,String,true
+modificationCustomer,Decimal(16 4),true
+facilitiesBudget,Decimal(16 4),true
+toolingBudget,Decimal(16 4),true
+areYouQuotingATurnKeyProject,Boolean,true
+rfqFulfillment,Boolean,true
+numberOfArcWeldingRobots,Decimal(16 4),true
+numberOfSpotWeldingAndHandlingRobots,Decimal(16 4),true
+numberOf1AxlePositioners,Decimal(16 4),true
+numberOf3AxlePositioners,Decimal(16 4),true
+numberOfExternalAxisForWeldingGuns,Decimal(16 4),true
+numberOfTracks,Decimal(16 4),true
+numberOfOperatorsPerShift,Decimal(16 4),true
+cycleTimeInSeconds,Decimal(16 4),true
+surfaceOrAreaNeededInGestampPlantInm2,Decimal(16 4),true
+pricesAccordingToTheFrameAgreementOfGestamp,String,true
+robotsBrand,String,true
+numOfTCPCalibrationSystemsIncludedInPrice,Decimal(16 4),true
+numberOfArcFlexCellIncludedInThePrice,Decimal(16 4),true
+numOfSpotFlexCellIncludedInTheItemPrice,Decimal(16 4),true
+arcWeldingSourcesBrand,String,true
+mNumAwsSyn,Decimal(16 4),true
+mNumAwsSpc,Decimal(16 4),true
+mNumAws2Syn,Decimal(16 4),true
+mNumAws2Spc,Decimal(16 4),true
+arcWeldingTorchesBrand,String,true
+numberOfAirCooledTorchesSimpleWire,Decimal(16 4),true
+numberOfWaterCooledTorchesSimpleWire,Decimal(16 4),true
+torchesCleaningStationsBrand,String,true
+numMechanicTorchCleaningStationsSimpleWire,Decimal(16 4),true
+numElectromagTorchCleaningStationsSimpleWire,Decimal(16 4),true
+numMechanicTorchCleaningStationsDoubleWire,Decimal(16 4),true
+numElectromagTorchCleaningStationsDoubleWire,Decimal(16 4),true
+spotWeldingSourcesBrand,String,true
+numberOfAirCooledSpotWeldingSources,Decimal(16 4),true
+numberOfWaterCooledSpotWeldingSources,Decimal(16 4),true
+spotWeldingGunsBrand,String,true
+numberOfPneumaticSpotWeldingGun,Decimal(16 4),true
+numberOfElectricSpotWeldingGun,Decimal(16 4),true
+tipDressersAndAutomaticCapChangesBrand,String,true
+numberOfTipDressers,Decimal(16 4),true
+numberOfAutomaticCapChangers,Decimal(16 4),true
+dressPacksBrand,String,true
+numberOfDressPacksAxis36,Decimal(16 4),true
+turnTablesBrand,String,true
+numberOfIndexTurntable,Decimal(16 4),true
+numberOfServoTurntable,Decimal(16 4),true
+glueApplicationSystemsBrand,String,true
+numberOfCompleteGlueApplicationSystems,Decimal(16 4),true
+numberOfAirCooledTorchesDoubleWire,Decimal(16 4),true
+numberOfWaterCooledTorchesDoubleWire,Decimal(16 4),true
+studWeldingSystemsBrand,String,true
+numberOfStudWeldingSystems,Decimal(16 4),true
+nutAndBoltFeedersBrand,String,true
+numberOfProjectionWelders,Decimal(16 4),true
+numberOfLaserSources,Decimal(16 4),true
+numberOfLaserHeads,Decimal(16 4),true
+numberOfNutFeeders,Decimal(16 4),true
+priceBreakdownForTooling,Decimal(16 4),true
+priceBreakdownForFacilities,Decimal(16 4),true
+numberOfRobotsForArcLaserApplication,Decimal(16 4),true
+laserHeadsBrand,String,true
+laserSourcesBrand,String,true
+fencesBrand,String,true
+engineeringCostRelatedToPHDInclEngAndDesign,Decimal(16 4),true
+toolingCostIncludingMaterialsAndManufacturing,Decimal(16 4),true
+partsPriceInclPackagingAndTransportAndCMMHardness,Decimal(16 4),true
+homLineTryOutCost,Decimal(16 4),true
+transport,Decimal(16 4),true
+unitExtraPartPricePerStrokeInclPackAndTransp,Decimal(16 4),true
+postTrimDieCostInclDesignAndProjectAndManuf,Decimal(16 4),true
+checkingFixtureCost,Decimal(16 4),true
+rollDoorsBrand,String,true
+numberOfDressPacksAxis13,Decimal(16 4),true
+markingSystemBrand,String,true
+numberOfDotPeeningMarkingSystems,Decimal(16 4),true
+numberOfScribingMarkingSystems,Decimal(16 4),true
+numberOfLaserMarkingSystems,Decimal(16 4),true

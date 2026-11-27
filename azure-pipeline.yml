@@ -1,0 +1,68 @@
+trigger:
+  branches:
+    exclude:
+      - main
+      - feature/*
+      - fix/*
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  # persistCredentials inyecta el token del pipeline en la config git del repo clonado,
+  # necesario para que maven-release-plugin pueda hacer 'git push' del commit de release
+  # y el tag (antes se usaba un PAT embebido en el <scm>, ya eliminado).
+  - checkout: self
+    persistCredentials: true
+
+  - script: |
+      git config --global user.email "acamaramonedero@es.gestamp.es"
+      git config --global user.name "Angel Camara"
+      # extraheader global con el token: lo hereda el 'git clone' que release:perform
+      # hace a target/checkout (el credential de persistCredentials es local al workspace).
+      git config --global http.https://dev.azure.com/.extraheader "AUTHORIZATION: bearer $SYSTEM_ACCESSTOKEN"
+      git checkout main
+    displayName: 'Set GIT Identity'
+    env:
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+
+  - task: MavenAuthenticate@0
+    displayName: 'Maven Authenticate'
+    inputs:
+      artifactsFeeds: 'Hypatia_scala'
+
+  - task: Maven@3
+    displayName: 'mvn release:prepare'
+    inputs:
+      mavenPomFile: 'pom.xml'
+      mavenOptions: '-Xmx3072m'
+      publishJUnitResults: true
+      testResultsFiles: '**/TEST-*.xml'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.8'
+      jdkArchitectureOption: 'x64'
+      goals: '--batch-mode release:prepare'
+
+  - task: Maven@3
+    displayName: 'mvn release:perform'
+    inputs:
+      mavenPomFile: 'pom.xml'
+      mavenOptions: '-Xmx3072m'
+      publishJUnitResults: true
+      testResultsFiles: '**/TEST-*.xml'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.8'
+      jdkArchitectureOption: 'x64'
+      goals: '--batch-mode release:perform'
+
+  - task: Copyfiles@2
+    displayName: 'Copy JARs to Artifact Staging Directory'
+    inputs:
+      artifactName: '**/*jar-with-dependencies.jar'
+      targetFolder: $(Build.ArtifactStagingDirectory)
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Aartifact'
+    inputs:
+      pathToPublish: $(Build.ArtifactStagingDirectory)
+      artifactName: 'drop'
