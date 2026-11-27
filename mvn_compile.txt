@@ -1,0 +1,473 @@
+PS C:\Users\natgarcia\IdeaProjects\hypatia-lib-scala> mvn -o -pl commons,hyptmanager package -DargLine=            
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO]
+[INFO] hypatia-lib-scala-commons                                          [jar]
+[INFO] hypatia-lib-scala-hyptmanager                                      [jar]
+[INFO]
+[INFO] -----------< com.gestamp.hypatia:hypatia-lib-scala-commons >------------
+[INFO] Building hypatia-lib-scala-commons 1.2.100-SNAPSHOT                [1/2]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ hypatia-lib-scala-commons ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO]
+[INFO] --- compiler:3.13.0:compile (default-compile) @ hypatia-lib-scala-commons ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO]
+[INFO] --- scala:4.5.6:compile (default) @ hypatia-lib-scala-commons ---
+[INFO] Using incremental compilation using Mixed compile order
+[INFO] Compiler bridge file: C:\Users\natgarcia\.sbt\1.0\zinc\org.scala-sbt\org.scala-sbt-compiler-bridge_2.12-1.5.8-bin_2.12.15__52.0-1.5.8_20211211T222914.jar
+[INFO] compile in 2,5 s
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ hypatia-lib-scala-commons ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO]
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ hypatia-lib-scala-commons ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO]
+[INFO] --- scala:4.5.6:testCompile (default) @ hypatia-lib-scala-commons ---
+[INFO] Using incremental compilation using Mixed compile order
+[INFO] Compiler bridge file: C:\Users\natgarcia\.sbt\1.0\zinc\org.scala-sbt\org.scala-sbt-compiler-bridge_2.12-1.5.8-bin_2.12.15__52.0-1.5.8_20211211T222914.jar
+[INFO] compile in 0,2 s
+[INFO]
+[INFO] --- surefire:2.19.1:test (default-test) @ hypatia-lib-scala-commons ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- scalatest:2.2.0:test (test) @ hypatia-lib-scala-commons ---
+[INFO] ScalaTest report directory: C:\Users\natgarcia\IdeaProjects\hypatia-lib-scala\commons\target\surefire-reports
+Discovery starting.
+Discovery completed in 1 second, 176 milliseconds.
+Run starting. Expected test count is: 27
+DomainsDaoTest:
+DatasetDaoTest:
+JsonToolsTest:
+- Get Parameters from JSON String: Map[String, Any]
+- Get Parameters from JSON String: Map[String, String]
+- Get List of case class from JSON String: List[A]
+UsecaseDaoTest:
+DataRelationshipDaoTest:
+DevelopmentCaseDaoTest:
+WriteTargetResolverTest:
+- a table that does not exist is written with the path option
+- a table that does not exist ignores any existing location and keeps the requested path untouched
+- an existing table whose location is identical to the path is written by name
+- an existing table is written by name when the location has a trailing slash and the path does not
+- an existing table is written by name when the path has a trailing slash and the location does not
+- an existing table is written by name when the location has repeated slashes
+- an existing table is written by name when scheme and authority differ only in case
+- an existing table whose location differs in the case of the path part is rejected
+- an existing table in a different location is rejected naming the table, the location and the path
+- an existing table in another container is rejected
+- an existing table whose location is a parent folder of the path is rejected
+- an existing table with unknown location is rejected naming the table and the path
+- samePath is symmetric for equivalent paths
+- samePath is false for different tables in the same schema folder
+- samePath is false when only one table name is a prefix of the other
+- samePath ignores surrounding blanks
+- normalizePath treats null as empty
+- normalizePath turns a blank string into empty
+- normalizePath keeps an already normalized real path unchanged
+- normalizePath lowercases scheme and authority but keeps the case of the path
+- normalizePath collapses extra slashes right after the scheme
+- normalizePath collapses repeated slashes inside the path and removes trailing slashes
+- normalizePath handles a path with only scheme and authority
+- normalizePath without scheme only collapses and trims slashes, keeping the case
+DatabricksManagerSuite:
+DistillationDaoTest:
+PostgreSqlManagerTest:
+HyptManagerDaoTest:
+SubdomainsDaoTest:
+Run completed in 1 second, 616 milliseconds.
+Total number of tests run: 27
+Suites: completed 13, aborted 0
+Tests: succeeded 27, failed 0, canceled 0, ignored 0, pending 0
+All tests passed.
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ hypatia-lib-scala-commons ---
+[INFO] 
+[INFO] --- shade:3.2.4:shade (default) @ hypatia-lib-scala-commons ---
+[INFO] Including io.netty:netty-buffer:jar:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-codec-http:jar:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-codec-http2:jar:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-common:jar:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-handler:jar:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-transport-native-unix-common:jar:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-handler-proxy:jar:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-transport:jar:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-transport-classes-epoll:jar:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-transport-classes-kqueue:jar:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-transport-native-epoll:jar:linux-x86_64:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-transport-native-kqueue:jar:osx-x86_64:4.1.87.Final in the shaded jar.
+[INFO] Including com.azure:azure-data-tables:jar:12.0.0-beta.5 in the shaded jar.
+[INFO] Including com.azure:azure-core:jar:1.14.0 in the shaded jar.
+[INFO] Including io.projectreactor:reactor-core:jar:3.4.3 in the shaded jar.
+[INFO] Including org.reactivestreams:reactive-streams:jar:1.0.3 in the shaded jar.
+[INFO] Including io.netty:netty-tcnative-boringssl-static:jar:2.0.36.Final in the shaded jar.
+[INFO] Including com.azure:azure-storage-common:jar:12.10.0 in the shaded jar.
+[INFO] Including com.azure:azure-core-http-netty:jar:1.7.1 in the shaded jar.
+[INFO] Including io.projectreactor.netty:reactor-netty:jar:0.9.15.RELEASE in the shaded jar.
+[INFO] Including org.json4s:json4s-jackson_2.12:jar:3.6.11 in the shaded jar.
+[INFO] Including org.json4s:json4s-core_2.12:jar:3.6.11 in the shaded jar.
+[INFO] Including org.json4s:json4s-ast_2.12:jar:3.6.11 in the shaded jar.
+[INFO] Including org.json4s:json4s-scalap_2.12:jar:3.6.11 in the shaded jar.
+[INFO] Including com.thoughtworks.paranamer:paranamer:jar:2.8 in the shaded jar.
+[INFO] Including org.json4s:json4s-native_2.12:jar:3.6.11 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-api:jar:2.0.9 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-annotations:jar:2.14.0 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-core:jar:2.14.0 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-databind:jar:2.14.0 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.14.0 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.dataformat:jackson-dataformat-xml:jar:2.14.0 in the shaded jar.
+[INFO] Including org.codehaus.woodstox:stax2-api:jar:4.2.1 in the shaded jar.
+[INFO] Including com.fasterxml.woodstox:woodstox-core:jar:6.4.0 in the shaded jar.
+[INFO] Including org.postgresql:postgresql:jar:42.6.0 in the shaded jar.
+[INFO] Including org.checkerframework:checker-qual:jar:3.31.0 in the shaded jar.
+[INFO] Including com.zaxxer:HikariCP:jar:6.2.1 in the shaded jar.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] HikariCP-6.2.1.jar, azure-core-1.14.0.jar, azure-core-http-netty-1.7.1.jar, azure-data-tables-12.0.0-beta.5.jar, azure-storage-common-12.10.0.jar, checker-qual-3.31.0.jar, hypatia-lib-scala-commons-1.2.100-SNAPSHOT.jar
+, jackson-annotations-2.14.0.jar, jackson-core-2.14.0.jar, jackson-databind-2.14.0.jar, jackson-dataformat-xml-2.14.0.jar, jackson-datatype-jsr310-2.14.0.jar, json4s-ast_2.12-3.6.11.jar, json4s-core_2.12-3.6.11.jar, json4s-jacks
+on_2.12-3.6.11.jar, json4s-native_2.12-3.6.11.jar, json4s-scalap_2.12-3.6.11.jar, netty-buffer-4.1.87.Final.jar, netty-codec-http-4.1.87.Final.jar, netty-codec-http2-4.1.87.Final.jar, netty-common-4.1.87.Final.jar, netty-handler
+-4.1.87.Final.jar, netty-handler-proxy-4.1.87.Final.jar, netty-tcnative-boringssl-static-2.0.36.Final.jar, netty-transport-4.1.87.Final.jar, netty-transport-classes-epoll-4.1.87.Final.jar, netty-transport-classes-kqueue-4.1.87.F
+inal.jar, netty-transport-native-epoll-4.1.87.Final-linux-x86_64.jar, netty-transport-native-kqueue-4.1.87.Final-osx-x86_64.jar, netty-transport-native-unix-common-4.1.87.Final.jar, paranamer-2.8.jar, postgresql-42.6.0.jar, reactive-streams-1.0.3.jar, reactor-core-3.4.3.jar, reactor-netty-0.9.15.RELEASE.jar, slf4j-api-2.0.9.jar, stax2-api-4.2.1.jar, woodstox-core-6.4.0.jar define 1 overlapping resource:
+[WARNING]   - META-INF/MANIFEST.MF
+[WARNING] netty-buffer-4.1.87.Final.jar, netty-codec-http-4.1.87.Final.jar, netty-codec-http2-4.1.87.Final.jar, netty-common-4.1.87.Final.jar, netty-handler-4.1.87.Final.jar, netty-handler-proxy-4.1.87.Final.jar, netty-transport
+-4.1.87.Final.jar, netty-transport-classes-epoll-4.1.87.Final.jar, netty-transport-classes-kqueue-4.1.87.Final.jar, netty-transport-native-epoll-4.1.87.Final-linux-x86_64.jar, netty-transport-native-kqueue-4.1.87.Final-osx-x86_64.jar, netty-transport-native-unix-common-4.1.87.Final.jar define 1 overlapping resource:
+[WARNING]   - META-INF/io.netty.versions.properties
+[WARNING] netty-common-4.1.87.Final.jar, reactor-core-3.4.3.jar define 1 overlapping resource:
+[WARNING]   - META-INF/services/reactor.blockhound.integration.BlockHoundIntegration
+[WARNING] checker-qual-3.31.0.jar, netty-tcnative-boringssl-static-2.0.36.Final.jar, slf4j-api-2.0.9.jar define 1 overlapping resource:
+[WARNING]   - META-INF/LICENSE.txt
+[WARNING] jackson-core-2.14.0.jar, jackson-databind-2.14.0.jar, jackson-dataformat-xml-2.14.0.jar, jackson-datatype-jsr310-2.14.0.jar, slf4j-api-2.0.9.jar define 1 overlapping classes:
+[WARNING]   - META-INF.versions.9.module-info
+[WARNING] jackson-annotations-2.14.0.jar, jackson-core-2.14.0.jar, jackson-databind-2.14.0.jar, jackson-dataformat-xml-2.14.0.jar, jackson-datatype-jsr310-2.14.0.jar, postgresql-42.6.0.jar, stax2-api-4.2.1.jar, woodstox-core-6.4.0.jar define 1 overlapping resource:
+[WARNING]   - META-INF/LICENSE
+[WARNING] jackson-core-2.14.0.jar, jackson-databind-2.14.0.jar, jackson-dataformat-xml-2.14.0.jar define 1 overlapping resource:
+[WARNING]   - META-INF/NOTICE
+[WARNING] jackson-core-2.14.0.jar, jackson-dataformat-xml-2.14.0.jar define 1 overlapping resource:
+[WARNING]   - META-INF/services/com.fasterxml.jackson.core.JsonFactory
+[WARNING] jackson-databind-2.14.0.jar, jackson-dataformat-xml-2.14.0.jar define 1 overlapping resource:
+[WARNING]   - META-INF/services/com.fasterxml.jackson.core.ObjectCodec
+[WARNING] maven-shade-plugin has detected that some class files are
+[WARNING] present in two or more JARs. When this happens, only one
+[WARNING] single version of the class is copied to the uber jar.
+[WARNING] Usually this is not harmful and you can skip these warnings,
+[WARNING] otherwise try to manually exclude artifacts based on
+[WARNING] mvn dependency:tree -Ddetail=true and the above output.
+[WARNING] See http://maven.apache.org/plugins/maven-shade-plugin/
+[INFO] Replacing C:\Users\natgarcia\IdeaProjects\hypatia-lib-scala\commons\target\hypatia-lib-scala-commons-jar-with-dependencies.jar with C:\Users\natgarcia\IdeaProjects\hypatia-lib-scala\commons\target\hypatia-lib-scala-commons-1.2.100-SNAPSHOT-shaded.jar
+[INFO] 
+[INFO] ---------< com.gestamp.hypatia:hypatia-lib-scala-hyptmanager >----------
+[INFO] Building hypatia-lib-scala-hyptmanager 1.2.65-SNAPSHOT             [2/2]
+[INFO]   from C:\Users\natgarcia\IdeaProjects\hypatia-lib-scala\hyptmanager\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ hypatia-lib-scala-hyptmanager ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\natgarcia\IdeaProjects\hypatia-lib-scala\hyptmanager\src\main\resources
+[INFO]
+[INFO] --- compiler:3.13.0:compile (default-compile) @ hypatia-lib-scala-hyptmanager ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO]
+[INFO] --- scala:4.5.6:compile (default) @ hypatia-lib-scala-hyptmanager ---
+[INFO] Using incremental compilation using Mixed compile order
+[INFO] Compiler bridge file: C:\Users\natgarcia\.sbt\1.0\zinc\org.scala-sbt\org.scala-sbt-compiler-bridge_2.12-1.5.8-bin_2.12.15__52.0-1.5.8_20211211T222914.jar
+[INFO] compile in 0,2 s
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ hypatia-lib-scala-hyptmanager ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO]
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ hypatia-lib-scala-hyptmanager ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO]
+[INFO] --- scala:4.5.6:testCompile (default) @ hypatia-lib-scala-hyptmanager ---
+[INFO] Using incremental compilation using Mixed compile order
+[INFO] Compiler bridge file: C:\Users\natgarcia\.sbt\1.0\zinc\org.scala-sbt\org.scala-sbt-compiler-bridge_2.12-1.5.8-bin_2.12.15__52.0-1.5.8_20211211T222914.jar
+[INFO] compile in 0,1 s
+[INFO]
+[INFO] --- surefire:2.19.1:test (default-test) @ hypatia-lib-scala-hyptmanager ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- scalatest:2.2.0:test (test) @ hypatia-lib-scala-hyptmanager ---
+[INFO] ScalaTest report directory: C:\Users\natgarcia\IdeaProjects\hypatia-lib-scala\hyptmanager\target\surefire-reports
+Discovery starting.
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Discovery completed in 777 milliseconds.
+Run starting. Expected test count is: 103
+HypatiaDatasetManagerTest:
+- Overwrite mode is accepted
+- Append mode is accepted
+- Other save modes are rejected
+- withOverwriteSchema adds overwriteSchema=true in Overwrite mode when the option is missing
+- withOverwriteSchema keeps the rest of the SparkOptions fields untouched
+- withOverwriteSchema leaves an explicit overwriteSchema=true as it is
+- withOverwriteSchema respects an explicit overwriteSchema=false in Overwrite mode
+- withOverwriteSchema respects OverwriteSchema=false with another capitalization and does not duplicate it
+- withOverwriteSchema replaces a null overwriteSchema value with true
+- withOverwriteSchema does not change the options in Append mode
+- withOverwriteSchema adds the option to empty otherOptions
+TagSyncDiffTest:
+- compute returns an empty diff when the current tags already match the desired ones
+- compute returns an empty diff when there are neither desired nor current tags
+- compute sets a desired tag that the column does not have
+- compute sets a tag whose value changed and does not unset the same key
+- compute unsets a current tag that is not in the desired state, with its current value
+- compute with an empty desired state unsets every current tag, ordered by column
+- compute ignores desired and current tags of columns that no longer exist in the table
+- compute matches column names ignoring case and uses the real column name of the table
+- compute does not set a tag that already exists on a column named with a different case
+- compute keeps the last value when the plan has several values for the same column and key
+- compute sets nothing when the current value equals the last desired value of a repeated key
+- compute keeps the SET statements in the order of the plan
+- compute compares tag keys with their case
+- compute with unsetAllowed = false leaves toUnset empty and keeps toSet
+- compute with an empty table column list produces an empty diff
+- unsetAllowed is false for a non excluded table with no Silver source in the lineage
+- unsetAllowed is true for a non excluded table with Silver sources in the lineage
+- unsetAllowed is always true for an excluded table
+- setTagSQL builds the exact SET TAGS statement
+- unsetTagSQL builds the exact UNSET TAGS statement, without the value
+- setTagSQL uses the same format as the existing additive propagation
+- compute keeps the tags of a column without lineage and reports them in keptByMissingLineage
+- compute cleans the obsolete tags of a column with lineage
+- compute with columns with and without lineage only unsets the ones with lineage
+- compute matches columnsWithLineage ignoring case and reports the real column name
+- compute with columnsWithLineage = None unsets every obsolete tag and keeps nothing
+- compute with unsetAllowed = false empties both toUnset and keptByMissingLineage
+- the per-column lineage guard does not affect the SET statements
+- a blocked tag on a column without lineage is unset when the desired state has no blocked
+- a blocked tag is outside the column guard even when the desired state is empty
+- a blocked tag on a column without lineage is not unset when unsetAllowed is false
+- a governed tag on a column without lineage is unset when another governed tag is desired elsewhere
+- the same governed key moving to another column is unset from the old column without lineage
+- a governed tag on a column without lineage is kept when the desired state has no governed nor blocked
+- a desired state with only blocked lets the governed tag of a column without lineage be unset
+- a non governed tag on a column without lineage is kept even if a governed tag is desired
+- a governed tag desired on a column that no longer exists does not lift the column guard
+- without governedKeys nor tableLevelKeys the column guard keeps blocked and governed tags
+[LineageApi] table-lineage table_name -> c.s.g, include_entity_lineage -> false -> HTTP 429, retry 1/3 in 1ms
+[LineageApi] table-lineage table_name -> c.s.g, include_entity_lineage -> false -> HTTP 503, retry 2/3 in 2ms
+[LineageApi] table-lineage table_name -> c.s.g, include_entity_lineage -> false -> HTTP 429, retry 1/2 in 1ms
+[LineageApi] table-lineage table_name -> c.s.g, include_entity_lineage -> false -> HTTP 429, retry 2/2 in 2ms
+[LineageApi] table-lineage table_name -> c.s.g, include_entity_lineage -> false -> HTTP 429: slow down
+[LineageApi] table-lineage table_name -> c.s.g, include_entity_lineage -> false -> HTTP 404: not found
+[LineageApi] table-lineage table_name -> c.s.g, include_entity_lineage -> false -> HTTP 429, retry 1/3 in 0ms
+LineageApiClientTest:
+- parseColumnUpstreams returns the upstream columns, without duplicates
+- parseColumnUpstreams is empty without upstream_cols
+- parseColumnUpstreams skips entries without catalog, schema, table or column
+- parseTableUpstreams returns catalog.schema.table of the upstream tables
+- parseTableUpstreams is empty without upstreams
+- HTTP 429 and 503 are retried until the API answers
+- HTTP 429 gives None after maxRetries retries
+- other HTTP errors are not retried
+- Retry-After of the response is honoured (seconds)
+- without host or token the client is not available and returns None without calling the API
+HypatiaTagPropagationTest:
+- getColumnTags returns tags for a column
+- getAllColumnTags returns all column tags for a table
+SLF4J: Failed to load class "org.slf4j.impl.StaticMDCBinder".
+SLF4J: Defaulting to no-operation MDCAdapter implementation.
+SLF4J: See http://www.slf4j.org/codes.html#no_static_mdc_binder for further details.
+- getTableColumns returns column names
+- getColumnLineageToLayer returns silver sources
+- getTagPropagationPlan identifies tags to propagate
+- catalog/schema/table names are matched case-insensitively (Unity Catalog lowercases them)
+- generateTagPropagationSQL creates ALTER TABLE statements
+- generatePropagationReport creates report DataFrame
+- executeTagPropagation performs dry run
+- resolveGovernedTags: columna multi-fuente no hereda governed tags
+- resolveGovernedTags: aplica blocked cuando governed tag se pierde por campo calculado
+- resolveGovernedTags: columna multi-fuente con el mismo governed tag en todas las fuentes lo conserva
+- resolveGovernedTags: columna multi-fuente con una fuente sin governed tag no lo hereda y aplica blocked
+- resolveGovernedTags: columna limpia gana sobre columna combinada, aunque la combinada traiga mayor prioridad
+- resolveGovernedTags: mismo campo en dos tablas, solo una etiquetada, conserva el tag y no aplica blocked
+- ColumnInfo generates correct full names
+TagSyncToDesiredStateTest:
+[TagSync] gold.sync.mc_switch ù 1 tag(s) to set, 1 tag(s) to unset (excluded=false, dryRun=true)
+- Silver now brings management_company: SET management_company and UNSET the old logistic_center
+[TagSync] gold.sync.mc_switch ù 1 tag(s) to set, 1 tag(s) to unset (excluded=false, dryRun=true)
+- Silver now brings management_company: every SET comes before every UNSET
+- the desired plan applies one governed tag per table and ignores the tags Gold already has
+[TagSync] gold.sync.mc_switch ù 1 tag(s) to set, 1 tag(s) to unset (excluded=false, dryRun=false)
+[TagSync] gold.sync.mc_switch ù 1 SET failed, skipping the 1 UNSET statement(s): obsolete tags are kept
+- if a SET fails no UNSET is executed
+[TagSync] gold.sync.excluded_tbl ù 0 tag(s) to set, 2 tag(s) to unset (excluded=true, dryRun=true)
+- an excluded table only gets UNSET statements for all its current tags
+[TagSync] gold.sync.missing_table ù 0 tag(s) to set, 0 tag(s) to unset (excluded=true, dryRun=true)
+- an excluded table without tags produces no statement
+[TagSync] gold.sync.no_lineage ù lineage returned no Silver source for any column, current column tags are kept (no UNSET). Possible latency of system.access.column_lineage or no execution in the last 30 days
+[TagSync] gold.sync.no_lineage ù 0 tag(s) to set, 0 tag(s) to unset (excluded=false, dryRun=true)
+- with no lineage at all the current Gold tags are kept (no UNSET)
+[TagSync] gold.sync.bronze_only ù lineage returned no Silver source for any column, current column tags are kept (no UNSET). Possible latency of system.access.column_lineage or no execution in the last 30 days
+[TagSync] gold.sync.bronze_only ù 0 tag(s) to set, 0 tag(s) to unset (excluded=false, dryRun=true)
+- with lineage only to non Silver sources the current Gold tags are kept (no UNSET)
+[TagSync] gold.sync.untagged_src ù 0 tag(s) to set, 1 tag(s) to unset (excluded=false, dryRun=true)
+- a Silver source found but without tags clears the obsolete Gold tags
+[TagSync] gold.sync.blocked_tbl ù 1 tag(s) to set, 1 tag(s) to unset (excluded=false, dryRun=true)
+- blocked: Silver had a governed tag that Gold does not keep, even if Gold had it before the overwrite
+- blocked is part of the desired plan on the first Gold column
+[TagSync] gold.sync.in_sync ù 0 tag(s) to set, 0 tag(s) to unset (excluded=false, dryRun=true)
+- a table already in the desired state produces no statement
+- if the lineage cannot be read the sync fails without executing anything
+[TagSync] gold.sync.excluded_tbl ù 0 tag(s) to set, 2 tag(s) to unset (excluded=true, dryRun=true)
+- an excluded table does not read the lineage, so a lineage failure does not prevent the UNSET
+[TagSync] gold.sync.partial_lineage.bronze_col ù lineage returned no Silver source for this column, its tags PII=true are kept (no UNSET). Possible latency of system.access.column_lineage or no execution in the last 30 days
+[TagSync] gold.sync.partial_lineage.lc_col ù lineage returned no Silver source for this column, its tags logistic_center=LC1 are kept (no UNSET). Possible latency of system.access.column_lineage or no execution in the last 30 days
+[TagSync] gold.sync.partial_lineage ù 0 tag(s) to set, 1 tag(s) to unset (excluded=false, dryRun=true)
+- a governed tag on a column without Silver lineage is kept while a column with lineage is cleaned
+[TagSync] gold.sync.partial_lineage.bronze_col ù lineage returned no Silver source for this column, its tags PII=true are kept (no UNSET). Possible latency of system.access.column_lineage or no execution in the last 30 days
+[TagSync] gold.sync.partial_lineage.lc_col ù lineage returned no Silver source for this column, its tags logistic_center=LC1 are kept (no UNSET). Possible latency of system.access.column_lineage or no execution in the last 30 days
+[TagSync] gold.sync.partial_lineage ù 0 tag(s) to set, 1 tag(s) to unset (excluded=false, dryRun=true)
+- a column whose lineage only has non Silver sources counts as without lineage and keeps its tags
+[TagSync] gold.sync.partial_lineage ù 0 tag(s) to set, 3 tag(s) to unset (excluded=true, dryRun=true)
+- an excluded table with partial lineage still unsets every tag
+[TagSync] gold.sync.blocked_to_governed ù 1 tag(s) to set, 1 tag(s) to unset (excluded=false, dryRun=true)
+- blocked on a column without lineage is unset once the governed tag reaches another column, SET first
+HypatiaSparkOptionsTest:
+*** RUN ABORTED ***
+  java.lang.ExceptionInInitializerError:
+  at com.gestamp.hypatia.defs.HypatiaSparkOptions$.<init>(HypatiaSparkOptions.scala:10)
+  at com.gestamp.hypatia.defs.HypatiaSparkOptions$.<clinit>(HypatiaSparkOptions.scala)
+  at com.gestamp.hypatia.defs.HypatiaSparkOptionsTest.$anonfun$new$1(HypatiaSparkOptionsTest.scala:10)
+  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+  at org.scalatest.Transformer.apply(Transformer.scala:22)
+  at org.scalatest.Transformer.apply(Transformer.scala:20)
+  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+  ...
+  Cause: com.gestamp.hypatia.exceptions.DatabricksManagerException:
+  at com.gestamp.hypatia.databricks.DatabricksManager.dbUtilsGetSecret(DatabricksManager.scala:29)
+  at com.gestamp.hypatia.utils.CommonsConstants$.<init>(CommonsConstants.scala:28)
+  at com.gestamp.hypatia.utils.CommonsConstants$.<clinit>(CommonsConstants.scala)
+  at com.gestamp.hypatia.defs.HypatiaSparkOptions$.<init>(HypatiaSparkOptions.scala:10)
+  at com.gestamp.hypatia.defs.HypatiaSparkOptions$.<clinit>(HypatiaSparkOptions.scala)
+  at com.gestamp.hypatia.defs.HypatiaSparkOptionsTest.$anonfun$new$1(HypatiaSparkOptionsTest.scala:10)
+  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+  at org.scalatest.Transformer.apply(Transformer.scala:22)
+  ...
+  Cause: java.lang.NullPointerException:
+  at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  at java.lang.reflect.Method.invoke(Method.java:498)
+  at com.databricks.dbutils_v1.DBUtilsHolder$$anon$1.invoke(DBUtilsHolder.scala:17)
+  at com.sun.proxy.$Proxy25.secrets(Unknown Source)
+  at com.gestamp.hypatia.databricks.DatabricksManager.$anonfun$dbUtilsGetSecret$1(DatabricksManager.scala:27)
+  at scala.util.Try$.apply(Try.scala:213)
+  at com.gestamp.hypatia.databricks.DatabricksManager.dbUtilsGetSecret(DatabricksManager.scala:27)
+  at com.gestamp.hypatia.utils.CommonsConstants$.<init>(CommonsConstants.scala:28)
+  ...
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ hypatia-lib-scala-hyptmanager ---
+[INFO] 
+[INFO] --- shade:3.2.4:shade (default) @ hypatia-lib-scala-hyptmanager ---
+[INFO] Including com.gestamp.hypatia:hypatia-lib-scala-commons:jar:1.2.99 in the shaded jar.
+[INFO] Including com.azure:azure-data-tables:jar:12.0.0-beta.5 in the shaded jar.
+[INFO] Including com.azure:azure-core:jar:1.14.0 in the shaded jar.
+[INFO] Including io.projectreactor:reactor-core:jar:3.4.3 in the shaded jar.
+[INFO] Including org.reactivestreams:reactive-streams:jar:1.0.3 in the shaded jar.
+[INFO] Including io.netty:netty-tcnative-boringssl-static:jar:2.0.36.Final in the shaded jar.
+[INFO] Including com.azure:azure-storage-common:jar:12.10.0 in the shaded jar.
+[INFO] Including com.azure:azure-core-http-netty:jar:1.7.1 in the shaded jar.
+[INFO] Including io.projectreactor.netty:reactor-netty:jar:0.9.15.RELEASE in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-annotations:jar:2.14.0 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-core:jar:2.14.0 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-databind:jar:2.14.0 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.14.0 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.dataformat:jackson-dataformat-xml:jar:2.14.0 in the shaded jar.
+[INFO] Including org.codehaus.woodstox:stax2-api:jar:4.2.1 in the shaded jar.
+[INFO] Including com.fasterxml.woodstox:woodstox-core:jar:6.4.0 in the shaded jar.
+[INFO] Including org.postgresql:postgresql:jar:42.6.0 in the shaded jar.
+[INFO] Including org.checkerframework:checker-qual:jar:3.31.0 in the shaded jar.
+[INFO] Including com.zaxxer:HikariCP:jar:6.2.1 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.36 in the shaded jar.
+[INFO] Including io.netty:netty-buffer:jar:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-codec-http:jar:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-codec-http2:jar:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-common:jar:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-handler:jar:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-transport-native-unix-common:jar:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-handler-proxy:jar:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-transport:jar:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-transport-classes-epoll:jar:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-transport-classes-kqueue:jar:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-transport-native-epoll:jar:linux-x86_64:4.1.87.Final in the shaded jar.
+[INFO] Including io.netty:netty-transport-native-kqueue:jar:osx-x86_64:4.1.87.Final in the shaded jar.
+[INFO] Including org.json4s:json4s-jackson_2.12:jar:3.6.11 in the shaded jar.
+[INFO] Including org.json4s:json4s-core_2.12:jar:3.6.11 in the shaded jar.
+[INFO] Including org.json4s:json4s-ast_2.12:jar:3.6.11 in the shaded jar.
+[INFO] Including org.json4s:json4s-scalap_2.12:jar:3.6.11 in the shaded jar.
+[INFO] Including com.thoughtworks.paranamer:paranamer:jar:2.8 in the shaded jar.
+[INFO] Including org.json4s:json4s-native_2.12:jar:3.6.11 in the shaded jar.
+[INFO] Including com.github.scopt:scopt_2.12:jar:3.7.1 in the shaded jar.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] HikariCP-6.2.1.jar, azure-core-1.14.0.jar, azure-core-http-netty-1.7.1.jar, azure-data-tables-12.0.0-beta.5.jar, azure-storage-common-12.10.0.jar, checker-qual-3.31.0.jar, hypatia-lib-scala-commons-1.2.99.jar, hypatia-
+lib-scala-hyptmanager-1.2.65-SNAPSHOT.jar, jackson-annotations-2.14.0.jar, jackson-core-2.14.0.jar, jackson-databind-2.14.0.jar, jackson-dataformat-xml-2.14.0.jar, jackson-datatype-jsr310-2.14.0.jar, json4s-ast_2.12-3.6.11.jar, 
+json4s-core_2.12-3.6.11.jar, json4s-jackson_2.12-3.6.11.jar, json4s-native_2.12-3.6.11.jar, json4s-scalap_2.12-3.6.11.jar, netty-buffer-4.1.87.Final.jar, netty-codec-http-4.1.87.Final.jar, netty-codec-http2-4.1.87.Final.jar, net
+ty-common-4.1.87.Final.jar, netty-handler-4.1.87.Final.jar, netty-handler-proxy-4.1.87.Final.jar, netty-tcnative-boringssl-static-2.0.36.Final.jar, netty-transport-4.1.87.Final.jar, netty-transport-classes-epoll-4.1.87.Final.jar
+, netty-transport-classes-kqueue-4.1.87.Final.jar, netty-transport-native-epoll-4.1.87.Final-linux-x86_64.jar, netty-transport-native-kqueue-4.1.87.Final-osx-x86_64.jar, netty-transport-native-unix-common-4.1.87.Final.jar, paran
+amer-2.8.jar, postgresql-42.6.0.jar, reactive-streams-1.0.3.jar, reactor-core-3.4.3.jar, reactor-netty-0.9.15.RELEASE.jar, scopt_2.12-3.7.1.jar, slf4j-api-1.7.36.jar, stax2-api-4.2.1.jar, woodstox-core-6.4.0.jar define 1 overlapping resource:
+[WARNING]   - META-INF/MANIFEST.MF
+[WARNING] netty-common-4.1.87.Final.jar, reactor-core-3.4.3.jar define 1 overlapping resource:
+[WARNING]   - META-INF/services/reactor.blockhound.integration.BlockHoundIntegration
+[WARNING] checker-qual-3.31.0.jar, netty-tcnative-boringssl-static-2.0.36.Final.jar define 1 overlapping resource:
+[WARNING]   - META-INF/LICENSE.txt
+[WARNING] jackson-annotations-2.14.0.jar, jackson-core-2.14.0.jar, jackson-databind-2.14.0.jar, jackson-dataformat-xml-2.14.0.jar, jackson-datatype-jsr310-2.14.0.jar, postgresql-42.6.0.jar, stax2-api-4.2.1.jar, woodstox-core-6.4.0.jar define 1 overlapping resource:
+[WARNING]   - META-INF/LICENSE
+[WARNING] jackson-core-2.14.0.jar, jackson-databind-2.14.0.jar, jackson-dataformat-xml-2.14.0.jar define 1 overlapping resource:
+[WARNING]   - META-INF/NOTICE
+[WARNING] jackson-core-2.14.0.jar, jackson-dataformat-xml-2.14.0.jar define 1 overlapping resource:
+[WARNING]   - META-INF/services/com.fasterxml.jackson.core.JsonFactory
+[WARNING] jackson-core-2.14.0.jar, jackson-databind-2.14.0.jar, jackson-dataformat-xml-2.14.0.jar, jackson-datatype-jsr310-2.14.0.jar define 1 overlapping classes:
+[WARNING]   - META-INF.versions.9.module-info
+[WARNING] jackson-databind-2.14.0.jar, jackson-dataformat-xml-2.14.0.jar define 1 overlapping resource:
+[WARNING]   - META-INF/services/com.fasterxml.jackson.core.ObjectCodec
+[WARNING] netty-buffer-4.1.87.Final.jar, netty-codec-http-4.1.87.Final.jar, netty-codec-http2-4.1.87.Final.jar, netty-common-4.1.87.Final.jar, netty-handler-4.1.87.Final.jar, netty-handler-proxy-4.1.87.Final.jar, netty-transport
+-4.1.87.Final.jar, netty-transport-classes-epoll-4.1.87.Final.jar, netty-transport-classes-kqueue-4.1.87.Final.jar, netty-transport-native-epoll-4.1.87.Final-linux-x86_64.jar, netty-transport-native-kqueue-4.1.87.Final-osx-x86_64.jar, netty-transport-native-unix-common-4.1.87.Final.jar define 1 overlapping resource:
+[WARNING]   - META-INF/io.netty.versions.properties
+[WARNING] maven-shade-plugin has detected that some class files are
+[WARNING] present in two or more JARs. When this happens, only one
+[WARNING] single version of the class is copied to the uber jar.
+[WARNING] Usually this is not harmful and you can skip these warnings,
+[WARNING] otherwise try to manually exclude artifacts based on
+[WARNING] mvn dependency:tree -Ddetail=true and the above output.
+[WARNING] See http://maven.apache.org/plugins/maven-shade-plugin/
+[INFO] Replacing C:\Users\natgarcia\IdeaProjects\hypatia-lib-scala\hyptmanager\target\hypatia-lib-scala-hyptmanager-jar-with-dependencies.jar with C:\Users\natgarcia\IdeaProjects\hypatia-lib-scala\hyptmanager\target\hypatia-lib-scala-hyptmanager-1.2.65-SNAPSHOT-shaded.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO]
+[INFO] hypatia-lib-scala-commons 1.2.100-SNAPSHOT ......... SUCCESS [ 15.049 s]
+[INFO] hypatia-lib-scala-hyptmanager 1.2.65-SNAPSHOT ...... SUCCESS [ 27.620 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  42.940 s
+[INFO] Finished at: 2026-11-27T11:47:27+01:00
+[INFO] ------------------------------------------------------------------------
+PS C:\Users\natgarcia\IdeaProjects\hypatia-lib-scala> 
